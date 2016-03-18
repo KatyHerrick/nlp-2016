@@ -1,4 +1,4 @@
-import nltk, re
+import nltk
 
 sentence = "We found that different species and subspecies showed markedly \
 different use of howl types, indicating that howl modulation is not arbitrary, \
