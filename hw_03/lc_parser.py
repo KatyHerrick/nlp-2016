@@ -53,7 +53,8 @@ IN -> "from" | "of"
 ADJP -> "not" "arbitrary,"
 """)
 
-# This grammar produces
+# This grammar produces a decent parse that runs quickly. To do: refine my
+# knowledge of grammar and fix the CONJP structure, which is not a real tag.
 grammar4 = nltk.CFG.fromstring("""
 S -> NP VP NP | NP VP NP VP NP | S CONJP S
 NP -> N | NP CC N | ADJ N | ADVP NP | NP PP | N N
