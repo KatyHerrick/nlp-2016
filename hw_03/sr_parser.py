@@ -55,6 +55,22 @@ IN -> "from" | "of"
 ADJP -> "not" "arbitrary,"
 """)
 
-sr_parser = nltk.ShiftReduceParser(grammar3, trace=2)
+# This produces a parse, though it does not fully align with the rules of
+# semantic units. In particular, it categorizes "We found that different
+# species and subspecies" incorrectly as a sentence. Due to the lack of
+# backtracking in nltk's ShiftReduceParser algorithm, rules have to be made
+# oddly specific or else it doesn't produce a parse at all.
+grammar4 = nltk.CFG.fromstring("""
+S -> S VP NP | NP VP NP | S CONJP S
+NP -> "We" | "different" "species" "and" "subspecies" | "markedly" \
+"different" "use" "of" "howl" "types," | "howl" "modulation" | \
+"one" "population" "from" "another."
+VP -> VP CC VP | "found" "that" | "showed" | \
+"is" "not" "arbitrary," | "can" "be" "used" "to" "distinguish"
+CONJP -> "indicating" "that"
+CC -> "but"
+""")
+
+sr_parser = nltk.ShiftReduceParser(grammar4)
 for tree in sr_parser.parse(sentence):
     print tree
