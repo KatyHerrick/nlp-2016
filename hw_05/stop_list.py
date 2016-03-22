@@ -22,3 +22,4 @@ closed_class_stop_words = ['a','the','an','and','or','but','about','above','afte
                            'you','your','yours','me','my','mine','I','we','us','much','and/or'
                            ]
 
+headers = ['.I', '.T', '.A', '.B', '.W']
