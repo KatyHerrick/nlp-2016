@@ -27,6 +27,43 @@ def remove_bad_tokens(tokens):
 
     return relevant_tokens
 
+def initialize_query_dictionary(query_file):
+    query_dictionary = {}
+
+    for line in query_file:
+        line_token = nltk.word_tokenize(line)
+        if line_token[0] == ".I":
+            query_id = line_token[1]
+        else:
+            prev_query_text = query_dictionary.get(query_id) or ''
+            query_text = prev_query_text + line
+            query_dictionary.update({query_id: query_text})
+
+    return query_dictionary
+
+def tokenize_query_dictionary(query_dictionary):
+    for query_id in query_dictionary:
+        query_text = query_dictionary.get(query_id)
+        query_tokens = nltk.word_tokenize(query_text)
+        query_dictionary[query_id] = query_tokens
+
+    return query_dictionary
+
+def clean_query_dictionary(query_dictionary):
+    for query_id in query_dictionary:
+        query_tokens = query_dictionary.get(query_id)
+        cleaned_tokens = remove_bad_tokens(query_tokens)
+        query_dictionary[query_id] = cleaned_tokens
+
+    return query_dictionary
+
+def make_query_dictionary(query_file):
+    query_dictionary = initialize_query_dictionary(query_file)
+    tokenized_query_dictionary = tokenize_query_dictionary(query_dictionary)
+    cleaned_query_dictionary = clean_query_dictionary(tokenized_query_dictionary)
+
+    return cleaned_query_dictionary
+
 if __name__ == "__main__":
     all_query_tokens = get_tokens_from_file('cran/cran.qry')
     query_tokens = remove_bad_tokens(all_query_tokens)
