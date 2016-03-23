@@ -18,31 +18,11 @@ def get_tokens_from_file(file_path):
 
     return all_tokens
 
-def remove_stop_words(tokens):
-    relevant_tokens = [token for token in tokens \
-        if not token in closed_class_stop_words]
-    return relevant_tokens
-
-def remove_punctuation(tokens):
-    relevant_tokens = [token for token in tokens \
-        if token not in string.punctuation]
-    return relevant_tokens
-
-def remove_numbers(tokens):
-    relevant_tokens = [token for token in tokens \
-        if not token.isdigit()]
-    return relevant_tokens
-
-def remove_headers(tokens):
-    relevant_tokens = [token for token in tokens \
-        if token not in headers]
-    return relevant_tokens
-
 def remove_bad_tokens(tokens):
     relevant_tokens = [token for token in tokens \
         if not token in closed_class_stop_words \
         and token not in string.punctuation \
-        and not token.isdigit() \
+        and not token.isdigit()
         and token not in headers]
 
     return relevant_tokens
