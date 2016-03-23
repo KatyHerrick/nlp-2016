@@ -65,9 +65,15 @@ def make_query_dictionary(query_file):
     return cleaned_query_dictionary
 
 if __name__ == "__main__":
-    all_query_tokens = get_tokens_from_file('cran/cran.qry')
-    query_tokens = remove_bad_tokens(all_query_tokens)
+    query_file = open(cwd() + 'cran/cran.qry')
+    query_dictionary = make_query_dictionary(query_file)
+    number_of_queries = len(query_dictionary)
 
-    print query_tokens
+    print query_dictionary
+    print number_of_queries
+
+
+
+
 
 
