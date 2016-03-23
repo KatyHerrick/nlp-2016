@@ -20,33 +20,34 @@ def remove_bad_tokens(tokens):
 
     return relevant_tokens
 
-def initialize_query_dictionary(query_file):
-    query_dictionary = {}
+def make_query_dictionary(query_file):
+    """
+    Given a File object, creates a dictionary of the form
+    {'query_id': ['token_1', 'token_2',... 'token_n'}
+    where all stop words, punctuation, and numbers are removed.
+    """
+    query_dict = {}
 
+    # initialize dict with values as raw strings
     for line in query_file:
         line_token = nltk.word_tokenize(line)
         if line_token[0] == ".I":
             query_id = line_token[1]
         else:
-            prev_query_text = query_dictionary.get(query_id) or ''
+            prev_query_text = query_dict.get(query_id) or ''
             query_text = prev_query_text + line
-            query_dictionary.update({query_id: query_text})
+            query_dict.update({query_id: query_text})
 
-    return query_dictionary
-
-def tokenize_query_dictionary(query_dictionary):
-    for query_id in query_dictionary:
-        query_text = query_dictionary.get(query_id)
+    # tokenize the dict values
+    for query_id in query_dict:
+        query_text = query_dict.get(query_id)
         query_tokens = nltk.word_tokenize(query_text)
-        query_dictionary[query_id] = query_tokens
+        query_tokens = remove_bad_tokens(query_tokens)
+        query_dict[query_id] = query_tokens
 
-    return query_dictionary
+    query_file.seek(0)  # return to start of file
 
-def clean_query_dictionary(query_dictionary):
-    for query_id in query_dictionary:
-        query_tokens = query_dictionary.get(query_id)
-        cleaned_tokens = remove_bad_tokens(query_tokens)
-        query_dictionary[query_id] = cleaned_tokens
+    return query_dict
 
     return query_dictionary
 
