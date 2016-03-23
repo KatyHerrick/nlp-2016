@@ -73,7 +73,15 @@ def make_token_dictionary(query_file, query_dict):
     return token_frequency_dict
 
 
+if __name__ == "__main__":
+    query_file = open(cwd() + 'cran/cran.qry')
+    query_dict = make_query_dictionary(query_file)
+    number_of_queries = len(query_dict)
 
+    token_dict = make_token_dictionary(query_file, query_dict)
 
+    print query_dict
+    print number_of_queries
+    print token_dict
 
 
