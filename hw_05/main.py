@@ -49,22 +49,28 @@ def make_query_dictionary(query_file):
 
     return query_dict
 
-    return query_dictionary
+def make_token_dictionary(query_file, query_dict):
+    """ Given a File object, creates a dictionary of the form
+    {'token': number_of_queries_token_appears_in}
+    """
+    token_frequency_dict = {}
 
-def make_query_dictionary(query_file):
-    query_dictionary = initialize_query_dictionary(query_file)
-    tokenized_query_dictionary = tokenize_query_dictionary(query_dictionary)
-    cleaned_query_dictionary = clean_query_dictionary(tokenized_query_dictionary)
+    file_text = query_file.read()
+    tokens = nltk.word_tokenize(file_text)
+    unique_tokens = set(remove_bad_tokens(tokens))
 
-    return cleaned_query_dictionary
+    for unique_token in unique_tokens:
+        for query_id in query_dict:
+            query = query_dict.get(query_id)
+            for token in query:
+                if token == unique_token:
+                    prev_frequency = token_frequency_dict.get(unique_token) or 0
+                    token_frequency = prev_frequency + 1
+                    token_frequency_dict.update({unique_token: token_frequency})
 
-if __name__ == "__main__":
-    query_file = open(cwd() + 'cran/cran.qry')
-    query_dictionary = make_query_dictionary(query_file)
-    number_of_queries = len(query_dictionary)
+    query_file.seek(0)  # return to start of file
 
-    print query_dictionary
-    print number_of_queries
+    return token_frequency_dict
 
 
 
