@@ -1,3 +1,7 @@
+# Katy Herrick
+### NLP—Homework #3
+(Resubmitted 3/18/16)
+
 import nltk
 
 sentence = "We found that different species and subspecies showed markedly \
