@@ -1,1 +1,4 @@
 *.pyc
+*.zip
+env/
+notes_from_the_night.py
