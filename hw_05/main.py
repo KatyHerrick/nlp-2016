@@ -2,10 +2,13 @@
 # NLP Homework #5 - Ad Hoc Information Retrieval
 # 3/21/16
 
+from __future__ import division
+from math import log
 import nltk
 import os.path
 import string
 import re
+
 from stop_list import closed_class_stop_words, headers
 
 def cwd():
@@ -19,6 +22,13 @@ def remove_bad_tokens(tokens):
         and token not in headers]
 
     return relevant_tokens
+
+def add_term_frequencies(tokens):
+    return {token: tokens.count(token) for token in tokens}
+
+def calculate_idf(collection_size, term_frequency_in_collection):
+    idf = collection_size/term_frequency_in_collection
+    return log(idf)
 
 def make_query_dictionary(query_file):
     """
