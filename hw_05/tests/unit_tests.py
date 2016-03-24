@@ -29,5 +29,18 @@ class TestMain(unittest.TestCase):
 
         self.assertDictEqual(query_dict, expected_dict)
 
+    def test_count_queries_containing_term(self):
+        query_dict = main.make_query_dictionary(self.query_test_file)
+        query_count = main.count_queries_containing_term(query_dict, "follow")
+        expected_query_count = 1
 
+        self.assertEqual(query_count, expected_query_count)
+
+    def test_make_token_dictionary(self):
+        query_dict = main.make_query_dictionary(self.query_test_file)
+        token_dict = main.make_token_dictionary(self.query_test_file, query_dict)
+
+        expected_dict = {'blade': 1.0986122886681098, 'aerodynamics': 1.0986122886681098, 'influence': 1.0986122886681098, 'follow': 1.0986122886681098, 'large': 0.0, 'rows': 1.0986122886681098, 'factors': 1.0986122886681098, 'invert': 1.0986122886681098, 'research': 1.0986122886681098, 'does': 1.0986122886681098, 'adjacent': 1.0986122886681098, 'between': 1.0986122886681098, 'progress': 1.0986122886681098, 'theoretical': 1.0986122886681098, 'concepts': 1.0986122886681098, 'interaction': 1.0986122886681098, 'matrices': 1.0986122886681098, 'structural': 1.0986122886681098, 'supersonic': 1.0986122886681098, 'made': 1.0986122886681098, 'required': 1.0986122886681098, 'flow': 1.0986122886681098, 'practical': 1.0986122886681098, 'cascade': 1.0986122886681098, 'time': 1.0986122886681098, 'unsteady': 0.4054651081081644}
+
+        self.assertDictEqual(token_dict, expected_dict)
 
