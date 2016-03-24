@@ -5,6 +5,8 @@ import main
 
 class TestMain(unittest.TestCase):
 
+    maxDiff = None
+
     def setUp(self):
         self.query_test_file = open('tests/query_test_file.qry')
         self.test_tokens_short = ['.I', '087', '.W', 'what', 'is', 'the', 'available', 'information', 'pertaining', 'to', 'the', 'effect', 'of', 'slight', 'rarefaction', 'on', 'boundary', 'layer', 'flows', '(', 'the', '?', 'slip', '?', 'effect', ')', '.']
@@ -20,9 +22,10 @@ class TestMain(unittest.TestCase):
     def test_make_query_dictionary(self):
         query_dict = main.make_query_dictionary(self.query_test_file)
 
-        expected_dict = {'041':['progress', 'made', 'research', 'unsteady', 'aerodynamics'],
-                               '049':['factors', 'influence', 'time', 'required', 'invert', 'large', 'structural', 'matrices'],
-                               '050':['does', 'practical', 'flow', 'follow', 'theoretical', 'concepts', 'interaction', 'between', 'adjacent', 'blade', 'rows', 'supersonic', 'cascade']}
+        expected_dict = {'041': {'made': 1, 'aerodynamics': 1, 'research': 1, 'large': 1, 'progress': 1, 'unsteady': 1},
+        '049': {'factors': 1, 'invert': 1, 'required': 1, 'influence': 1, 'large': 1, 'time': 2, 'structural': 1, 'matrices': 1, 'unsteady': 1},
+        '050': {'large': 1, 'interaction': 1, 'rows': 1, 'supersonic': 1, 'between': 1, 'flow': 1, 'practical': 1, 'cascade': 1, 'does': 1, 'adjacent': 1, 'concepts': 1, 'follow': 3, 'blade': 1, 'theoretical': 1}
+        }
 
         self.assertDictEqual(query_dict, expected_dict)
 
