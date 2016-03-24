@@ -48,50 +48,75 @@ def make_query_dictionary(query_file):
             query_text = prev_query_text + line
             query_dict.update({query_id: query_text})
 
-    # tokenize the dict values
+    # tokenize the dict values and add per-query token frequency
     for query_id in query_dict:
         query_text = query_dict.get(query_id)
         query_tokens = nltk.word_tokenize(query_text)
         query_tokens = remove_bad_tokens(query_tokens)
-        query_dict[query_id] = query_tokens
+        tokens_with_frequencies = add_term_frequencies(query_tokens)
+        query_dict.update({query_id: tokens_with_frequencies})
 
     query_file.seek(0)  # return to start of file
 
     return query_dict
 
+def count_queries_containing_term(query_dict, token):
+    query_count = 0
+
+    for query_id in query_dict:
+        query = query_dict.get(query_id)
+        unique_tokens_of_query = list(set(query.keys()))
+        if token in unique_tokens_of_query:
+            query_count += 1
+
+    return query_count
+
 def make_token_dictionary(query_file, query_dict):
     """ Given a File object, creates a dictionary of the form
-    {'token': number_of_queries_token_appears_in}
+    {'token': inverse_document_frequency}
     """
-    token_frequency_dict = {}
-
     file_text = query_file.read()
     tokens = nltk.word_tokenize(file_text)
-    unique_tokens = set(remove_bad_tokens(tokens))
+    tokens = remove_bad_tokens(tokens)
+    token_dict = {}
+    term_counts = {}
+    collection_size = len(query_dict)
 
-    for unique_token in unique_tokens:
-        for query_id in query_dict:
-            query = query_dict.get(query_id)
-            for token in query:
-                if token == unique_token:
-                    prev_frequency = token_frequency_dict.get(unique_token) or 0
-                    token_frequency = prev_frequency + 1
-                    token_frequency_dict.update({unique_token: token_frequency})
+    token_dict = {token: calculate_idf(collection_size,
+        count_queries_containing_term(query_dict, token))
+        for token in tokens}
 
     query_file.seek(0)  # return to start of file
 
-    return token_frequency_dict
+    return token_dict
 
+def make_query_feature_vectors(query_dict, token_dict):
+    """ Returns a dictionary of the form
+    {[QUERY_1]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF),
+    [QUERY_2]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF), ...
+    [QUERY_m]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF)
+    """
+    query_feature_vectors = {}
+
+    for query_id in query_dict:
+        query = query_dict.get(query_id)
+        term_tf_idf_scores = {}
+
+        for token in query:
+            tf = query.get(token)
+            idf = token_dict.get(token)
+            term_tf_idf_scores.update({token: tf*idf})
+
+        query_feature_vectors.update({query_id: term_tf_idf_scores})
+
+    return query_feature_vectors
 
 if __name__ == "__main__":
     query_file = open(cwd() + 'cran/cran.qry')
     query_dict = make_query_dictionary(query_file)
-    number_of_queries = len(query_dict)
-
     token_dict = make_token_dictionary(query_file, query_dict)
 
-    print query_dict
-    print number_of_queries
-    print token_dict
+    query_feature_vectors = make_query_feature_vectors(query_dict, token_dict)
 
+    print query_feature_vectors
 
