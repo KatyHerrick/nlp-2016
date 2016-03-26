@@ -26,76 +26,40 @@ def remove_bad_tokens(tokens):
 def add_term_frequencies(tokens):
     return {token: tokens.count(token) for token in tokens}
 
-def calculate_idf(collection_size, term_frequency_in_collection):
-    idf = collection_size/term_frequency_in_collection
-    return log(idf)
-
-def make_query_dictionary(query_file):
+def make_tf_dictionary(collection_file):
     """
     Given a File object, creates a dictionary of the form
-    {'query_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
+    {'abstract/query_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
     where all stop words, punctuation, and numbers are removed.
     """
-    query_dict = {}
-
-    # initialize dict with values as raw strings
-    for line in query_file:
-        line_token = nltk.word_tokenize(line)
-        if line_token[0] == ".I":
-            query_id = line_token[1]
-        else:
-            prev_query_text = query_dict.get(query_id) or ''
-            query_text = prev_query_text + line
-            query_dict.update({query_id: query_text})
-
-    # tokenize the dict values and add per-query token frequency
-    for query_id in query_dict:
-        query_text = query_dict.get(query_id)
-        query_tokens = nltk.word_tokenize(query_text)
-        query_tokens = remove_bad_tokens(query_tokens)
-        tokens_with_frequencies = add_term_frequencies(query_tokens)
-        query_dict.update({query_id: tokens_with_frequencies})
-
-    query_file.seek(0)  # return to start of file
-
-    return query_dict
-
-def make_abstract_dictionary(abstract_file):
-    """
-    Given a File object, creates a dictionary of the form
-    {'abstract_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
-    where all stop words, punctuation, and numbers are removed.
-    """
-    abstract_dict = {}
+    collection = {}
     concat_flag = False
 
     # initialize dict with values as raw strings
-    for line in abstract_file:
+    for line in collection_file:
         line_token = nltk.word_tokenize(line)
         if line_token[0] in headers:
             if line_token[0] == ".I":
-                abstract_id = line_token[1]
+                doc_id = line_token[1]
             elif line_token[0] == ".W":
                 concat_flag = True
             else:
                 concat_flag = False
         else:
             if concat_flag:
-                prev_line = abstract_dict.get(abstract_id) or ''
-                abstract_text = prev_line + line
-                abstract_dict.update({abstract_id: abstract_text})
+                prev_line = collection.get(doc_id) or ''
+                doc_text = prev_line + line
+                collection.update({doc_id: doc_text})
 
-    # tokenize the dict values and add per-abstract token frequency
-    for abs_id in abstract_dict:
-        abstract_text = abstract_dict.get(abs_id)
-        abstract_tokens = nltk.word_tokenize(abstract_text)
-        abstract_tokens = remove_bad_tokens(abstract_tokens)
-        tokens_with_frequencies = add_term_frequencies(abstract_tokens)
-        abstract_dict.update({abs_id: tokens_with_frequencies})
+    # tokenize the dict values and add per-doc token frequency
+    for doc_id in collection:
+        doc_text = collection.get(doc_id)
+        doc_tokens = nltk.word_tokenize(doc_text)
+        doc_tokens = remove_bad_tokens(doc_tokens)
+        tokens_with_frequencies = add_term_frequencies(doc_tokens)
+        collection.update({doc_id: tokens_with_frequencies})
 
-    abstract_file.seek(0)  # return to start of file
-
-    return abstract_dict
+    return collection
 
 def count_docs_containing_term(collection, token):
     doc_count = 0
@@ -108,29 +72,29 @@ def count_docs_containing_term(collection, token):
 
     return doc_count
 
-def get_unique_tokens(doc_dict):
+def get_unique_tokens(collection_dict):
     all_tokens = []
-
-    for doc_id in doc_dict:
-        doc_tokens = doc_dict.get(doc_id)
+    for doc_id in collection_dict:
+        doc_tokens = collection_dict.get(doc_id)
         for key in doc_tokens:
             all_tokens.append(key)
 
-    unique_tokens = list(set(all_tokens))
-    return unique_tokens
+    return list(set(all_tokens))
 
+def calculate_idf(collection_size, term_frequency_in_collection):
+    return log(collection_size/term_frequency_in_collection)
 
-def make_idf_dictionary(doc_dict):
-    """ Given a File object, creates a dictionary of the form
+def make_idf_dictionary(per_doc_tf_dict):
+    """ Given a dictionary of documents with per-document term frequencies,
+    returns a dictionary of the form
     {'token': inverse_document_frequency}
     """
-
-    tokens = get_unique_tokens(doc_dict)
+    tokens = get_unique_tokens(per_doc_tf_dict)
     idf_dict = {}
-    collection_size = len(doc_dict)
+    collection_size = len(per_doc_tf_dict)
 
     idf_dict = {token: calculate_idf(collection_size,
-        count_docs_containing_term(doc_dict, token))
+        count_docs_containing_term(per_doc_tf_dict, token))
         for token in tokens}
 
     return idf_dict
@@ -158,10 +122,13 @@ def make_query_feature_vectors(query_dict, token_dict):
 
 if __name__ == "__main__":
     query_file = open(cwd() + 'cran/cran.qry')
-    query_dict = make_query_dictionary(query_file)
-    token_dict = make_token_dictionary(query_file, query_dict)
+    per_query_tfs = make_tf_dictionary(query_file)
 
-    query_feature_vectors = make_query_feature_vectors(query_dict, token_dict)
+    abstract_file = open(cwd() + 'cran/cran.all.1400')
+    per_abstract_tfs = make_tf_dictionary(abstract_file)
 
+    query_term_idfs = make_idf_dictionary(per_query_tfs)
+    abstract_token_idfs = make_idf_dictionary(per_abstract_tfs)
+
+    query_feature_vectors = make_query_feature_vectors(per_query_tfs, query_term_idfs)
     print query_feature_vectors
-
