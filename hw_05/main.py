@@ -60,6 +60,43 @@ def make_query_dictionary(query_file):
 
     return query_dict
 
+def make_abstract_dictionary(abstract_file):
+    """
+    Given a File object, creates a dictionary of the form
+    {'abstract_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
+    where all stop words, punctuation, and numbers are removed.
+    """
+    abstract_dict = {}
+    concat_flag = False
+
+    # initialize dict with values as raw strings
+    for line in abstract_file:
+        line_token = nltk.word_tokenize(line)
+        if line_token[0] in headers:
+            if line_token[0] == ".I":
+                abstract_id = line_token[1]
+            elif line_token[0] == ".W":
+                concat_flag = True
+            else:
+                concat_flag = False
+        else:
+            if concat_flag:
+                prev_line = abstract_dict.get(abstract_id) or ''
+                abstract_text = prev_line + line
+                abstract_dict.update({abstract_id: abstract_text})
+
+    # tokenize the dict values and add per-abstract token frequency
+    for abs_id in abstract_dict:
+        abstract_text = abstract_dict.get(abs_id)
+        abstract_tokens = nltk.word_tokenize(abstract_text)
+        abstract_tokens = remove_bad_tokens(abstract_tokens)
+        tokens_with_frequencies = add_term_frequencies(abstract_tokens)
+        abstract_dict.update({abs_id: tokens_with_frequencies})
+
+    abstract_file.seek(0)  # return to start of file
+
+    return abstract_dict
+
 def count_queries_containing_term(query_dict, token):
     query_count = 0
 
