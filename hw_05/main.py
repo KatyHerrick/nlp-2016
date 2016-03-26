@@ -33,7 +33,7 @@ def calculate_idf(collection_size, term_frequency_in_collection):
 def make_query_dictionary(query_file):
     """
     Given a File object, creates a dictionary of the form
-    {'query_id': ['token_1', 'token_2',... 'token_n'}
+    {'query_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
     where all stop words, punctuation, and numbers are removed.
     """
     query_dict = {}
@@ -129,9 +129,9 @@ def make_token_dictionary(query_file, query_dict):
 
 def make_query_feature_vectors(query_dict, token_dict):
     """ Returns a dictionary of the form
-    {[QUERY_1]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF),
-    [QUERY_2]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF), ...
-    [QUERY_m]: (TERM_1_TFIDF, TERM_2_TFIDF,...TERM_n_TFIDF)
+    {'001': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_x': term_x_idf]
+    '002': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_y': term_y_idf], ...
+    ['query_id_n:  ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_z': term_z_idf]
     """
     query_feature_vectors = {}
 
