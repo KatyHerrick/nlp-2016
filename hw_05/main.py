@@ -65,7 +65,7 @@ def count_docs_containing_term(collection, token):
     doc_count = 0
 
     for doc_id in collection:
-        doc_dict = collection.get(doc_id)  # returns {'token_1': token_1_tf, 'token_2':...}
+        doc_dict = collection.get(doc_id)
         unique_tokens_of_doc = list(set(doc_dict.keys()))
         if token in unique_tokens_of_doc:
             doc_count += 1
@@ -99,7 +99,7 @@ def make_idf_dictionary(per_doc_tf_dict):
 
     return idf_dict
 
-def make_query_feature_vectors(query_dict, token_dict):
+def make_query_vectors(query_dict, token_dict):
     """ Returns a dictionary of the form
     {'001': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_x': term_x_idf]
     '002': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_y': term_y_idf], ...
@@ -130,5 +130,3 @@ if __name__ == "__main__":
     query_term_idfs = make_idf_dictionary(per_query_tfs)
     abstract_token_idfs = make_idf_dictionary(per_abstract_tfs)
 
-    query_feature_vectors = make_query_feature_vectors(per_query_tfs, query_term_idfs)
-    print query_feature_vectors
