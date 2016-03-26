@@ -120,23 +120,29 @@ def make_query_vectors(query_dict, token_dict):
 
     return query_feature_vectors
 
-def make_abstract_vectors_by_query(query_vectors, abstract_tfs, abstract_idfs):
+def make_abstract_vector(query_vector, abstract_tfs, abstract_idfs):
+    token_tf_idf_scores = {}
+    for token in query_vector.keys():
+        tf = abstract_tfs.get(token) or 0.0
+        idf = abstract_idfs.get(token) or 0.0
+        token_tf_idf_scores.update({token: tf*idf})
+
+    return token_tf_idf_scores
+
+def make_vectors_for_single_query(query_vector, abstract_tfs_lookup, abstract_idfs):
+    abstract_vectors_for_single_query = {}
+    for abstract_id in abstract_tfs_lookup.keys():
+        abstract_tfs = abstract_tfs_lookup.get(abstract_id)
+        abstract_vector = make_abstract_vector(query_vector, abstract_tfs, abstract_idfs)
+        abstract_vectors_for_single_query.update({abstract_id: abstract_vector})
+
+def make_abstract_vectors_by_query(query_vectors, abstract_tfs_lookup, abstract_idfs):
     abstract_vectors = {}
 
     for query_id in query_vectors:
-        abs_vectors_for_single_query = {}
         query_vector = query_vectors.get(query_id)
-        for abstract_id in abstract_tfs.keys():
-            token_tf_idf_scores = {}
-            abstract_tf_lookup = abstract_tfs.get(abstract_id)
-            for token in query_vector.keys():
-                tf = abstract_tf_lookup.get(token) or 0.0
-                idf = abstract_idfs.get(token) or 0.0
-                token_tf_idf_scores.update({token: tf*idf})
-
-            abs_vectors_for_single_query.update({abstract_id: token_tf_idf_scores})
-
-        abstract_vectors.update({query_id: abs_vectors_for_single_query})
+        abs_vectors_for_this_query = make_vectors_for_single_query(query_vector, abstract_tfs_lookup, abstract_idfs)
+        abstract_vectors.update({query_id: abs_vectors_for_this_query})
 
     return abstract_vectors
 
