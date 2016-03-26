@@ -97,35 +97,43 @@ def make_abstract_dictionary(abstract_file):
 
     return abstract_dict
 
-def count_queries_containing_term(query_dict, token):
-    query_count = 0
+def count_docs_containing_term(collection, token):
+    doc_count = 0
 
-    for query_id in query_dict:
-        query = query_dict.get(query_id)
-        unique_tokens_of_query = list(set(query.keys()))
-        if token in unique_tokens_of_query:
-            query_count += 1
+    for doc_id in collection:
+        doc_dict = collection.get(doc_id)  # returns {'token_1': token_1_tf, 'token_2':...}
+        unique_tokens_of_doc = list(set(doc_dict.keys()))
+        if token in unique_tokens_of_doc:
+            doc_count += 1
 
-    return query_count
+    return doc_count
 
-def make_token_dictionary(query_file, query_dict):
+def get_unique_tokens(doc_dict):
+    all_tokens = []
+
+    for doc_id in doc_dict:
+        doc_tokens = doc_dict.get(doc_id)
+        for key in doc_tokens:
+            all_tokens.append(key)
+
+    unique_tokens = list(set(all_tokens))
+    return unique_tokens
+
+
+def make_idf_dictionary(doc_dict):
     """ Given a File object, creates a dictionary of the form
     {'token': inverse_document_frequency}
     """
-    file_text = query_file.read()
-    tokens = nltk.word_tokenize(file_text)
-    tokens = remove_bad_tokens(tokens)
-    token_dict = {}
-    term_counts = {}
-    collection_size = len(query_dict)
 
-    token_dict = {token: calculate_idf(collection_size,
-        count_queries_containing_term(query_dict, token))
+    tokens = get_unique_tokens(doc_dict)
+    idf_dict = {}
+    collection_size = len(doc_dict)
+
+    idf_dict = {token: calculate_idf(collection_size,
+        count_docs_containing_term(doc_dict, token))
         for token in tokens}
 
-    query_file.seek(0)  # return to start of file
-
-    return token_dict
+    return idf_dict
 
 def make_query_feature_vectors(query_dict, token_dict):
     """ Returns a dictionary of the form
