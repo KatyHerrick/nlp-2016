@@ -19,8 +19,8 @@ class TestMain(unittest.TestCase):
 
         self.assertListEqual(filtered_tokens, expected_tokens)
 
-    def test_make_query_dictionary(self):
-        query_dict = main.make_query_dictionary(self.query_test_file)
+    def test_make_tf_dictionary(self):
+        query_dict = main.make_tf_dictionary(self.query_test_file)
 
         expected_dict = {'041': {'made': 1, 'aerodynamics': 1, 'research': 1, 'large': 1, 'progress': 1, 'unsteady': 1},
         '049': {'factors': 1, 'invert': 1, 'required': 1, 'influence': 1, 'large': 1, 'time': 2, 'structural': 1, 'matrices': 1, 'unsteady': 1},
