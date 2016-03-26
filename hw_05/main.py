@@ -101,9 +101,9 @@ def make_idf_dictionary(per_doc_tf_dict):
 
 def make_query_vectors(query_dict, token_dict):
     """ Returns a dictionary of the form
-    {'001': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_x': term_x_idf]
-    '002': ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_y': term_y_idf], ...
-    ['query_id_n:  ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_z': term_z_idf]
+    {'001': ['term_1': term_1_tf_idf, 'term_2': term_2_tf_idf,... 'term_x': term_x_tf_idf]
+    '002': ['term_1': term_1_tf_idf, 'term_2': term_2_tf_idf,... 'term_y': term_y_tf_idf], ...
+    ['query_id_n:  ['term_1': term_1_tf_idf, 'term_2': term_2_tf_idf,... 'term_z': term_z_tf_idf]
     """
     query_feature_vectors = {}
 
@@ -135,6 +135,8 @@ def make_vectors_for_single_query(query_vector, abstract_tfs_lookup, abstract_id
         abstract_tfs = abstract_tfs_lookup.get(abstract_id)
         abstract_vector = make_abstract_vector(query_vector, abstract_tfs, abstract_idfs)
         abstract_vectors_for_single_query.update({abstract_id: abstract_vector})
+
+    return abstract_vectors_for_single_query
 
 def make_abstract_vectors_by_query(query_vectors, abstract_tfs_lookup, abstract_idfs):
     abstract_vectors = {}
