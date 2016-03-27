@@ -5,9 +5,10 @@
 from __future__ import division
 from math import log
 import nltk
+import numpy
 import os.path
-import string
 import re
+import string
 
 from stop_list import closed_class_stop_words, headers
 
@@ -148,6 +149,31 @@ def make_abstract_vectors_by_query(query_vectors, abstract_tfs_lookup, abstract_
 
     return abstract_vectors
 
+def extract_tf_idfs(vector):
+    tf_idfs = []
+    for token in sorted(vector):
+        val = vector.get(token)
+        tf_idfs.append(vector.get(token))
+
+    return tf_idfs
+
+def calculate_cosine_similarity(query_vector, abstract_vector):
+    """ Query Vector looks like this
+    ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_x': term_x_idf]
+    """
+    query_tf_idfs = extract_tf_idfs(query_vector)
+    abstract_tf_idfs = extract_tf_idfs(abstract_vector)
+
+    numerator = numpy.dot(query_tf_idfs, abstract_tf_idfs)
+    denominator = numpy.linalg.norm(query_tf_idfs) * numpy.linalg.norm(abstract_tf_idfs)
+
+    if denominator <= 0:
+        similarity = 0.0
+    else:
+        similarity = numerator/denominator
+
+    return similarity
+
 if __name__ == "__main__":
     query_file = open(cwd() + 'cran/cran.qry')
     per_query_tfs = make_tf_dictionary(query_file)
@@ -162,3 +188,10 @@ if __name__ == "__main__":
     abstract_vectors = make_abstract_vectors_by_query( \
         query_vectors, per_abstract_tfs, abstract_term_idfs)
 
+    for query_id in abstract_vectors:
+        query_vector = query_vectors.get(query_id)
+        abstract_vector_set = abstract_vectors.get(query_id)
+        for abstract_id in abstract_vector_set:
+            abstract_vector = abstract_vector_set.get(abstract_id)
+            sim = calculate_cosine_similarity(query_vector, abstract_vector)
+            print "%s:%s ==> %f" % (query_id, abstract_id, float(sim))
