@@ -192,10 +192,10 @@ if __name__ == "__main__":
     abstract_vectors = make_abstract_vectors_by_query( \
         query_vectors, per_abstract_tfs, abstract_term_idfs)
 
-    for query_id in abstract_vectors:
+    for query_id in sorted(abstract_vectors):
         query_vector = query_vectors.get(query_id)
         abstract_vector_set = abstract_vectors.get(query_id)
-        for abstract_id in abstract_vector_set:
-            abstract_vector = abstract_vector_set.get(abstract_id)
-            sim = calculate_cosine_similarity(query_vector, abstract_vector)
-            print "%s:%s ==> %f" % (query_id, abstract_id, float(sim))
+        for abstract_id in sorted(abstract_vector_set, key=abstract_vector_set.get, reverse=True):
+            # abstract_vector = abstract_vector_set.get(abstract_id)
+            sim = calculate_cosine_similarity(query_vector, abstract_vector_set.get(abstract_id))
+            print "%s %s %f" % (query_id, abstract_id, sim)
