@@ -11,13 +11,14 @@ The goal was calculate the similarity of each search query to each abstract, and
 python main.py
 ```
 from the root directory. This will generate a file called `output_file.txt` with 3 columns:
-| Query ID | Abstract ID | Cosine Similarity Score  |
-|:---|:---|:---|
-|001 | 878 | 0.547009993528 |
-|001 | 486 | 0.527114275295 |
-|001 | 12 | 0.507882017581 |
-| ... | ... | ... |
-|365 | 1362 | 0.276715974355 |
+
+Query ID | Abstract ID | Cosine Similarity Score
+---|---|---
+001 | 878 | 0.547009993528
+001 | 486 | 0.527114275295
+001 | 12 | 0.507882017581
+... | ... | ...
+365 | 1362 | 0.276715974355
 
 ---
 ##### File Parsing
