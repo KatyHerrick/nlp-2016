@@ -1,7 +1,7 @@
 # Ad Hoc Information Retrieval
 Katy Herrick | 3/30/16
 
-##### Overview
+### Overview
 In this project, I was given two text files:
 1. `cran.qry`, which contains 225 search queries
 2. `cran.all.1400` which contains 1400 research paper abstracts and associated information, such as author, bibliographic info, etc.
@@ -10,7 +10,14 @@ The goal was calculate the similarity of each search query to each abstract, and
 ``` shell
 python main.py
 ```
-from the root directory.
+from the root directory. This will generate a file called `output_file.txt` with 3 columns:
+| Query ID | Abstract ID | Cosine Similarity Score  |
+|:--|:--|:--|
+|001 | 878 | 0.547009993528 |
+|001 | 486 | 0.527114275295 |
+|001 | 12 | 0.507882017581 |
+| ... | ... | ... |
+|365 | 1362 | 0.276715974355 |
 
 ##### File Parsing
 Parsing the original files was more difficult than expected. Each abstract is separated by a new line with ".I" followed by the abstract number, but the twist is that although there are 1400 abstracts, they aren't numbered consecutively. So, I couldn't put the abstract text into a list and index into it that way. To maintain the integrity of the abstract/query IDs, I created a dictionary of the form
