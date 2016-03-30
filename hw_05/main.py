@@ -100,7 +100,16 @@ def make_idf_dictionary(per_doc_tf_dict):
 
     return idf_dict
 
-def make_query_vectors(query_dict, token_dict):
+def make_single_query_vector(query, idf_dict):
+    single_query_vector = {}
+    for token in query:
+        tf = query.get(token)
+        idf = idf_dict.get(token)
+        single_query_vector.update({token: tf*idf})
+
+    return single_query_vector
+
+def make_query_vectors(query_dict, idf_dict):
     """ Returns a dictionary of the form
     {'001': ['term_1': term_1_tf_idf, 'term_2': term_2_tf_idf,... 'term_x': term_x_tf_idf]
     '002': ['term_1': term_1_tf_idf, 'term_2': term_2_tf_idf,... 'term_y': term_y_tf_idf], ...
@@ -110,14 +119,9 @@ def make_query_vectors(query_dict, token_dict):
 
     for query_id in query_dict:
         query = query_dict.get(query_id)
-        term_tf_idf_scores = {}
+        query_vector = make_single_query_vector(query, idf_dict)
 
-        for token in query:
-            tf = query.get(token)
-            idf = token_dict.get(token)
-            term_tf_idf_scores.update({token: tf*idf})
-
-        query_feature_vectors.update({query_id: term_tf_idf_scores})
+        query_feature_vectors.update({query_id: query_vector})
 
     return query_feature_vectors
 
