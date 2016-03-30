@@ -6,8 +6,10 @@ from __future__ import division
 from math import log
 import nltk
 import numpy
+from operator import itemgetter
 import os.path
 import re
+import sys
 import string
 
 from stop_list import closed_class_stop_words, headers
@@ -176,7 +178,7 @@ def calculate_cosine_similarity(query_vector, abstract_vector):
     else:
         similarity = numerator/denominator
 
-    return similarity
+    return float(similarity)  # recast from the numpy data type
 
 if __name__ == "__main__":
     with open(cwd() + 'cran/cran.qry') as f:
@@ -192,10 +194,21 @@ if __name__ == "__main__":
     abstract_vectors = make_abstract_vectors_by_query( \
         query_vectors, per_abstract_tfs, abstract_term_idfs)
 
-    for query_id in sorted(abstract_vectors):
+    similarities_by_query = {}
+    for query_id in abstract_vectors:
         query_vector = query_vectors.get(query_id)
         abstract_vector_set = abstract_vectors.get(query_id)
-        for abstract_id in sorted(abstract_vector_set, key=abstract_vector_set.get, reverse=True):
-            # abstract_vector = abstract_vector_set.get(abstract_id)
-            sim = calculate_cosine_similarity(query_vector, abstract_vector_set.get(abstract_id))
-            print "%s %s %f" % (query_id, abstract_id, sim)
+        sim_of_each_abstract = {}
+        for abstract_id in abstract_vector_set:
+            abstract_vector = abstract_vector_set.get(abstract_id)
+            sim = calculate_cosine_similarity(query_vector, abstract_vector)
+            sim_of_each_abstract.update({abstract_id:sim})
+        similarities_by_query.update({query_id: sim_of_each_abstract})
+
+    sys.stdout = open('output_file.txt', 'w')
+
+    for query_id in sorted(similarities_by_query):
+        dict_of_sims = similarities_by_query.get(query_id)
+        dict_sorted_by_sim = sorted(dict_of_sims.items(), key=itemgetter(1), reverse=True)
+        for sim_tuple in dict_sorted_by_sim:
+            print "%s %s %s" % (query_id, sim_tuple[0], sim_tuple[1])
