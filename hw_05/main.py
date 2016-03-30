@@ -128,6 +128,9 @@ def make_query_vectors(query_dict, idf_dict):
     return query_feature_vectors
 
 def make_abstract_vector(query_vector, abstract_tfs, abstract_idfs):
+    """
+    {'token_1': token_1_tfidf, 'token_2': token_2_tfidf, ...}
+    """
     token_tf_idf_scores = {}
     for token in query_vector.keys():
         tf = abstract_tfs.get(token) or 0.0
@@ -137,6 +140,13 @@ def make_abstract_vector(query_vector, abstract_tfs, abstract_idfs):
     return token_tf_idf_scores
 
 def make_vectors_for_single_query(query_vector, abstract_tfs_lookup, abstract_idfs):
+    """
+    {'abstract_001: {'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...},
+     'abstract_002: {'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...},
+     ...
+     'abstract_n:{'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...}
+    }
+    """
     abstract_vectors_for_single_query = {}
     for abstract_id in abstract_tfs_lookup.keys():
         abstract_tfs = abstract_tfs_lookup.get(abstract_id)
@@ -146,6 +156,13 @@ def make_vectors_for_single_query(query_vector, abstract_tfs_lookup, abstract_id
     return abstract_vectors_for_single_query
 
 def make_abstract_vectors_by_query(query_vectors, abstract_tfs_lookup, abstract_idfs):
+    """
+    {'query_001': {'abstract_001:{'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...},
+                  {'abstract_002:{'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...},
+                  ...
+                  {'abstract_n:{'token_1': token_1_tfidf, 'token_2': token_2_tfidf,...}
+    }
+    """
     abstract_vectors = {}
 
     for query_id in query_vectors:
@@ -164,9 +181,6 @@ def extract_tf_idfs(vector):
     return tf_idfs
 
 def calculate_cosine_similarity(query_vector, abstract_vector):
-    """ Query Vector looks like this
-    ['term_1': term_1_idf, 'term_2': term_2_idf,... 'term_x': term_x_idf]
-    """
     query_tf_idfs = extract_tf_idfs(query_vector)
     abstract_tf_idfs = extract_tf_idfs(abstract_vector)
 
