@@ -179,11 +179,11 @@ def calculate_cosine_similarity(query_vector, abstract_vector):
     return similarity
 
 if __name__ == "__main__":
-    query_file = open(cwd() + 'cran/cran.qry')
-    per_query_tfs = make_tf_dictionary(query_file)
+    with open(cwd() + 'cran/cran.qry') as f:
+        per_query_tfs = make_tf_dictionary(f)
 
-    abstract_file = open(cwd() + 'cran/cran.all.1400')
-    per_abstract_tfs = make_tf_dictionary(abstract_file)
+    with open(cwd() + 'cran/cran.all.1400') as f:
+        per_abstract_tfs = make_tf_dictionary(f)
 
     query_term_idfs = make_idf_dictionary(per_query_tfs)
     abstract_term_idfs = make_idf_dictionary(per_abstract_tfs)
