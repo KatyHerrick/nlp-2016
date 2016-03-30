@@ -225,4 +225,5 @@ if __name__ == "__main__":
         dict_of_sims = similarities_by_query.get(query_id)
         dict_sorted_by_sim = sorted(dict_of_sims.items(), key=itemgetter(1), reverse=True)
         for sim_tuple in dict_sorted_by_sim:
-            print "%s %s %s" % (query_id, sim_tuple[0], sim_tuple[1])
+            if sim_tuple[1] > 0:
+                print "%s %s %s" % (query_id, sim_tuple[0], sim_tuple[1])
