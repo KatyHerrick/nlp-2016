@@ -1,0 +1,3823 @@
+commit 3067741771a2c4a241307301cfd9e3c2270dfbd9
+Author: Filo <filo0909@gmail.com>
+Date:   Thu Apr 14 20:12:53 2016 +0200
+
+    Archer (5th) Sound Script
+    
+    * Replaced UBW sounds, if reverting sound reverse also
+    soundscripts/hero_archer.vsndevts
+
+commit 34b621c64765af5738e2306276a7ffca5fb64fb2
+Author: Filo <filo0909@gmail.com>
+Date:   Thu Apr 14 19:14:44 2016 +0200
+
+    Heracles Sound Script
+
+commit 3073c0da05a1faacf6e4ccf559f214ae9c5eae86
+Merge: 526ba6e a812b72
+Author: F1l00 <filo0909@gmail.com>
+Date:   Wed Apr 13 12:27:32 2016 +0200
+
+    Merge pull request #1 from dun1007/master
+    
+    Update from master
+
+commit a812b7269d3d0cf44bb880fe8a0bc73cd1d87762
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Apr 10 12:39:55 2016 -0700
+
+    v1.45c
+
+commit 540564510a7c405217f8a0d5667d483b77b4a750
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Apr 9 15:05:26 2016 -0700
+
+    v1.45b
+
+commit e215d310193112da0949b98a962f073679b21bd8
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Apr 9 02:14:53 2016 -0700
+
+    hotfix
+
+commit 442a89971dea344c81815b34bf6c127afcca10dc
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Apr 9 01:00:12 2016 -0700
+
+    1.45
+
+commit dde938f00fb787cbfd1852230552efe81d03b718
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Apr 7 21:43:00 2016 -0700
+
+    Update Archer's BP and Hrunting mechanics
+    
+    now channeling based
+
+commit fd4dad33fe062234ce3370e232eeebeebf693eec
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Apr 7 00:38:20 2016 -0700
+
+    v1.44i
+
+commit 25d6353c3cd9f9a5cec21c622ddfd0e9220662aa
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Apr 6 00:51:44 2016 -0700
+
+    Alpha version of Fatepedia
+    
+    http://i.imgur.com/ef9zoev.png
+
+commit 09c985d897d0e8be5208e52292214b8b96ba4660
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Apr 4 16:30:45 2016 -0700
+
+    savepoint
+
+commit 687f5c7f31618c827b04f581547e280fcdcfa0fc
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Mar 26 09:42:27 2016 -0700
+
+    v1.44h
+
+commit 4d39856d9355244ed6b9f7ffd3bb55b2aa9cca2f
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Mar 25 16:08:28 2016 -0700
+
+    hotfix
+
+commit 8d877c8664440812b8a6b5beb2d0e134d1c3364b
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Mar 25 14:27:41 2016 -0700
+
+    v1.44f
+
+commit 79c6e340567266f68ceee92caa0b798681edd44d
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Mar 25 01:20:51 2016 -0700
+
+    savepoint
+
+commit f5829be7abef0c3bb25a650af1ed428a16d188bf
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Mar 20 00:33:36 2016 -0700
+
+    hotfix
+
+commit ea82c49709b3a79b71af8e50865514207a29d904
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Mar 19 15:58:48 2016 -0700
+
+    1.44e
+
+commit ec95bf88cfe01d13678afd3b8e1e352f66b291f5
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Mar 18 23:24:56 2016 -0700
+
+    v1.44d
+
+commit 7e29bc04495a6ffb0272089e9e50d1ea16bd9a81
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Mar 17 18:26:07 2016 -0700
+
+    v1.44c
+
+commit 8c01244dc668126f608c117ce9b1d14be6f676b2
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Mar 17 01:28:00 2016 -0700
+
+    Finish playable alpha version of trio rumble and FFA
+    
+    TODO:
+    global objective
+    round-based mechanics bugfix
+
+commit 6a5721732e2730f4d7ab2d1178d793e9d8f4ec9c
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Mar 14 00:26:21 2016 -0700
+
+    Finish details and prototype build of FFA map
+    
+    * Global objective - free shard upon picking an item in arbitrary
+    location within center circle, occurs every 3 mins. No shard of
+    prosperity for first 10 minutes(early 5 levels too good)
+    * XP generator when hero is present at center - 10+2% every second
+    * 3 seconds special invulnerability on respawn, and when player stays
+    within base(3v3 only)
+
+commit 22b5bbfa70fc9e5492bfb4fac70f3b15b31d4bf7
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Mar 11 22:43:54 2016 -0800
+
+    Finish Ryuudo temple(FFA) map
+
+commit acace0aec81d23af3af93c8d380815e6f38ef2b0
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Mar 9 23:39:34 2016 -0800
+
+    Finish prototype version of 3v3v3v3
+    
+    TODO:
+    Add global objective
+    Add spawn camp prevention mechanics
+    Add XP generator
+    Make FFA map
+    Bugfixes
+
+commit c4e46d7c933fefbf7748b5f055aa7f24150618d5
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Mar 7 14:33:10 2016 -0800
+
+    Trio scoreboard
+
+commit b157a1115d3b71ea65d5750ad24a71af1581147e
+Merge: 248b4ac 526ba6e
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Mon Mar 7 13:33:34 2016 -0800
+
+    Merge pull request #24 from F1l00/master
+    
+    sorry was busy for a bit
+
+commit 248b4ac24a182f8ebe01346b33b818abb035b172
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Mar 7 13:32:08 2016 -0800
+
+    Finish Trio Rumble map
+
+commit 526ba6ef3ac80b3755750fafedcff8f41310cc71
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Mar 5 10:52:06 2016 +0100
+
+    True Assassin Sound Script
+    
+    * Tamamo Spawn line updated
+    * Add 3rd TA's attack line (TO-DO)
+
+commit 4b88e2178fc7334c957cc886e5019a82d6f35d33
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Mar 3 22:40:31 2016 -0800
+
+    savepoint(trio rumble)
+
+commit 14f165e7aeb202423684571e6f743a31a41329a3
+Merge: c490ad3 17c1515
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Mar 2 15:22:23 2016 -0800
+
+    Merge
+
+commit c490ad3759da36bf504d604dbdf371932886f0b5
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Mar 2 15:17:32 2016 -0800
+
+    v1.44b
+
+commit 17c1515e1b7322b9d6c2387957e6968639c53d9b
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Feb 17 17:48:46 2016 -0800
+
+    Update README.md
+
+commit 7b2f8f28a873245cc21049f72525852b11474cc3
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Feb 17 17:41:24 2016 -0800
+
+    Remove GOB additional note
+
+commit ef28cc657ff5929f3d6d1a5b4b6a88132ce1232f
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Feb 17 17:37:58 2016 -0800
+
+    update addon_english_changes
+
+commit 9463c01c9e98a5c01736a47923d6a92bfa9cabad
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Feb 17 17:37:43 2016 -0800
+
+    v1.44
+
+commit bbf0600acaa31231114e06d9feeeb04ccbb311d0
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Feb 13 18:35:20 2016 -0800
+
+    Revert physics class
+
+commit bd40d4e1c66c1f746e314691e0de8c1003e8d485
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Feb 12 18:16:17 2016 -0800
+
+    hotfix
+
+commit 81b3f0fe1ddda84b3e39f19e709a66275489db2d
+Merge: 486f4c3 cdfbce4
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Fri Feb 12 09:46:52 2016 -0700
+
+    Merge pull request #23 from F1l00/master
+    
+    Diarmuid (Lancer 5th) Sound Script
+
+commit cdfbce4802a1b3b73a6b68e064d169580ee6df97
+Author: Filo <filo0909@gmail.com>
+Date:   Fri Feb 12 12:54:12 2016 +0100
+
+    Diarmuid (Lancer 5th) Sound Script
+
+commit 486f4c31ebf1c15b73a1909fb1d7e2e1dc3f2204
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Feb 11 20:02:12 2016 -0800
+
+    v1.43c
+
+commit 7aca9e50f4e2fd05aaef3c8960271572a7ab57c7
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Feb 10 17:07:01 2016 -0800
+
+    Possible bugfix to Saber avalon
+
+commit a2f535984585c05cdcd2ad3742f9f535e44b371a
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Feb 9 21:36:19 2016 -0800
+
+    animated portrait cards
+
+commit e680bf9f469e98443b798a51872964ac025a9446
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Feb 9 21:13:12 2016 -0800
+
+    hotfix
+
+commit 1d36e657e75500cb8e09af79a88e27de01366ecc
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Feb 9 19:17:46 2016 -0800
+
+    v1.43b
+
+commit 3d0d1fa06f5d7ae944a087b2d0f1da2f60a05a8b
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Feb 9 14:45:43 2016 -0800
+
+    v1.43
+
+commit f0007127348b2a7e5313d6e6594e90d6a427233d
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Feb 8 22:42:28 2016 -0800
+
+    v1.43 savepoint
+    
+    TODO:
+    Assassin(Extra)'s No Second Strike rework
+    Damage display
+    CC unification
+
+commit 6beec63422cef5ce0b20ca44e822c8acf785927f
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Feb 8 03:20:29 2016 -0800
+
+    Update addon_english_changes
+
+commit 4ac61df7516f439b79af8bb6601d05ef73be36c2
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sun Feb 7 23:51:22 2016 -0800
+
+    Remove Lancer(5th)'s ult's tracking projectile use
+    
+    you can tell i'm a real software engineer because i'd rather just make
+    tiny tweaks to the clusterfuck that is lancer's ult code until it works
+    than actually take half an hour to rewrite it so it's sane
+
+commit d2c8ef641803befc494467bb165a1d45ff17b8da
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Feb 7 21:06:57 2016 -0800
+
+    hotfix
+
+commit 81997370ab5081685be21b64b928078e29309b4d
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Feb 7 20:10:22 2016 -0800
+
+    v1.42
+
+commit cbb8ab46dddb8a7bdbc54dd048cf97487148ea5d
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Feb 7 07:51:05 2016 -0800
+
+    Revert Saber Alter's excalibur sound
+
+commit 9cc0240ece8d07fe75af00b36a9c493f8a950a0e
+Merge: a1e4da2 421d4d8
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Sun Feb 7 08:39:53 2016 -0700
+
+    Merge pull request #22 from F1l00/master
+    
+    Saber Alter Sound Script
+
+commit 421d4d881ea98413f6a00c6f62cd798f199cc8fd
+Author: Filo <filo0909@gmail.com>
+Date:   Sun Feb 7 16:37:10 2016 +0100
+
+    Saber Alter Sound Script
+    
+    * Changed Excaibur to Excalibur Morgan, descriptions need update (if
+    reverting back, revert also hero_saber_alter script)
+    * Spectre's custom voice' lines unchanged (to-do)
+
+commit a1e4da2f4335b89c6bd34a6345a8c8ed54d05d9f
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sun Feb 7 01:43:09 2016 -0800
+
+    Hookup Luminosite Eternelle particles (incl. zone radius)
+
+commit 693f563dbc3c0768aee915dcd38cbcef7ee5d0e8
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Feb 6 22:19:47 2016 -0800
+
+    Half finished combo, misc changes
+    
+    Tried illusion approach but it was being goddamn complex and gimmicky as
+    usual. RIP 3 hours
+    
+    If everything goes well Ruler should be ready for release tomorrow
+    evening, although my crunch will have to continue for some attribute
+    reworks and system changes T_T
+
+commit 16c536c73148bbc525d752e3a5a4b8c97081ba17
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Feb 6 18:41:41 2016 -0800
+
+    Finish Ruler's R
+    
+    Things left to do:
+    R particles(sacred_zone requires radius CP, luminousite_eternelle.vpcf
+    needs to be changed so it is not projectile system reliant, also speed
+    CP)
+    Code combo and attributes
+
+commit 4c5747290c052279bd8af14acb83d7c248c226da
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Feb 6 13:30:10 2016 -0800
+
+    the (involuntary) particle cleanup
+    
+    thanks copy system definition
+
+commit 67a50215eeffa61dcf49aab1aa2eab08a71c408c
+Merge: e8c0e3e 0ee500d
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Sat Feb 6 13:33:51 2016 -0700
+
+    Merge pull request #21 from F1l00/master
+    
+    Casster (Extra) Sound Script
+
+commit 0ee500d796ff565a5efd7f5e5377a2a7aceb45d9
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Feb 6 21:10:45 2016 +0100
+
+    Caster (Extra) Sound Script
+    
+    * Revert hero_tamamo script if reverting to old tamamo_amaterasu.mp3
+
+commit e8c0e3e4038521639ce99c09300e5a68f280fcb7
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Feb 5 21:58:25 2016 -0800
+
+    holy shit i'm bad at literally everything
+
+commit 13fd4f10cfff1cb462335fabac2e4957dfbdb8a1
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Feb 5 21:47:17 2016 -0800
+
+    Add particles for Ruler's Charisma, and edit tooltip slightly
+
+commit f8c5b41612a2247a1d9c83f58843fbfd5e67d113
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Feb 5 19:46:23 2016 -0800
+
+    Finish Ruler's QWE abilities
+    
+    ult is just a pseudocode for now
+
+commit 1d7d98d81169fbe5a915ed7241822224bad2354a
+Merge: bcd3231 1528275
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Fri Feb 5 15:29:15 2016 -0700
+
+    Merge pull request #20 from F1l00/master
+    
+    Lancelot Sound Script
+
+commit 1528275ae82515831eeeb7456d6fff1f35ee04c1
+Author: Filo <filo0909@gmail.com>
+Date:   Fri Feb 5 23:18:41 2016 +0100
+
+    Lancelot Sound Script
+
+commit bcd32316ffc6dd056e08f8d1879d6bdf47f5d3e5
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Feb 4 21:12:33 2016 -0800
+
+    Compile Panorama vtex files, update Ruler's skill icons and finish innate abilities,
+    
+    Rest of abilities still in WIP
+
+commit f21492b4c16cf0382ac53e3d86db4cad120af496
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Feb 4 15:37:36 2016 -0800
+
+    Ruler skill icons, tooltip fix
+    
+    Jeekarose's tooltip fix was lost in the middle of conflict and merge,
+    brought it back
+
+commit c9fc5aafdf2cf6efb52b2c11efc7f1182602fc8b
+Merge: 1de177f f5d8a2f
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Thu Feb 4 10:51:52 2016 -0700
+
+    Merge pull request #19 from F1l00/master
+    
+    Ruler Sound Script
+
+commit f5d8a2f21256ade42ef5faf827f1564aa5e1c3ef
+Author: Filo <filo0909@gmail.com>
+Date:   Thu Feb 4 18:43:44 2016 +0100
+
+    Ruler Sound Script
+
+commit 845785616c13052af822bfb871875c142dea5195
+Merge: b3aabaa 1de177f
+Author: Filo <filo0909@gmail.com>
+Date:   Thu Feb 4 09:21:31 2016 +0100
+
+    Merge remote-tracking branch 'refs/remotes/dun1007/master'
+
+commit 1de177f554e2ca15c0fbf325a801ea21cbbdd20a
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Feb 3 22:29:43 2016 -0800
+
+    Fix KV glitch
+
+commit 359d9e0839470cde068d99ea3aea395ab23eb541
+Merge: b0d894e cdf5b43
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Wed Feb 3 23:17:40 2016 -0700
+
+    Merge pull request #18 from dun1007/pr/17
+    
+    Pr/17
+
+commit cdf5b43fb06cbe27877e6696ec785f11d86bcb7d
+Merge: b3aabaa b0d894e
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Feb 3 22:16:54 2016 -0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master' into pr/17
+
+commit b0d894ee4e95f2cb0afee1608518edacc514e40a
+Merge: 1b985c0 2bfbc48
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Feb 3 22:09:35 2016 -0800
+
+    Merge branch 'master' of https://github.com/dun1007/fateanother
+    e/dota_addons/fateanother/resource/addon_english.txt
+
+commit 1b985c03541318c358a4cf52a0a837370155296c
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Feb 3 21:56:39 2016 -0800
+
+    more Ruler stuffs
+
+commit b3aabaa7cf80d039fdf501e3a65642035ade1dcd
+Author: Filo <filo0909@gmail.com>
+Date:   Wed Feb 3 22:02:03 2016 +0100
+
+    Saber Sound Script
+
+commit 2bfbc483f29fa4dc1c9d4d449cdd01a02381fc72
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Feb 3 04:49:29 2016 -0800
+
+    hi im here to forget things
+
+commit 8a41395e7df0f90363667cebe5e225cb0a9e2546
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Feb 3 04:46:13 2016 -0800
+
+    Edit Ruler strings
+
+commit e3b498e40d5300e8751005ae950ed2b1c5e4df9d
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Feb 2 18:25:34 2016 -0800
+
+    Finish Ruler's ability tooltips
+    
+    Lore and additional notes are pending for now
+
+commit 5f7b899fff4fd738d4b0bb5d69925583c18a4355
+Merge: 0cca507 c6157df
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Tue Feb 2 16:00:30 2016 -0700
+
+    Merge pull request #16 from F1l00/master
+    
+    New Stats' Icons
+
+commit ec3ce527a8568ac1daa9ad3baa1953225d2efeae
+Merge: c6157df 0cca507
+Author: Filo <filo0909@gmail.com>
+Date:   Tue Feb 2 15:49:34 2016 +0100
+
+    Merge remote-tracking branch 'refs/remotes/dun1007/master'
+
+commit c6157df97b033f630be2ecbf06ac3eb02386df48
+Author: Filo <filo0909@gmail.com>
+Date:   Tue Feb 2 15:48:12 2016 +0100
+
+    New Stats' Icons
+
+commit 0cca50794b823dfd7b7e0cb0d8ca4c82bc9b230a
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Feb 1 20:24:12 2016 -0800
+
+    Update Ruler's animation, portrait, and base stats
+    
+    Todo:
+    Finish writing tooltips for her attributes
+    Find her assets(mainly .png icons for portrait and such)
+    Code abilities
+
+commit db03beb985f075c42976380f4c63181e3288c4b4
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Feb 1 17:38:26 2016 -0800
+
+    Soundclips
+    
+    :+1:
+
+commit 908d6429aefeb36fc05039a0bb8b117955562cb2
+Merge: 356a9f0 caa9445
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Mon Feb 1 17:18:22 2016 -0800
+
+    Merge pull request #15 from F1l00/master
+    
+    Lancer (5th) Sound Scripts
+
+commit 356a9f0e1a5c8c9e568a4f22cf1413caa8644d7a
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Feb 1 17:17:46 2016 -0800
+
+    Fix Jeanne model
+    
+    Meshes fixed, but jeanne_acc.vmat material's alpha channel for white
+    transparency is not working properly.
+
+commit caa94451d30fab5da0d4a402357f7180c8e9f5be
+Author: Filo <filo0909@gmail.com>
+Date:   Mon Feb 1 23:27:56 2016 +0100
+
+    Lancer (5th) Sound Scripts
+    
+    + Updated Gae Bolg and Heartbreak sounds
+
+commit 1fafa9ae74da75e14731ae445d4fed67613ff970
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 31 20:06:58 2016 -0800
+
+    1.41
+
+commit e65b29690023d4664875083e99b25c416caf9359
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 31 10:41:47 2016 -0800
+
+    Some Ruler tooltips
+    
+    also a savepoint
+
+commit 831e25b74aa45c9d7ba3605b431c8a61af7067f7
+Merge: b23bfbb 72d87cd
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Sun Jan 31 07:09:31 2016 -0800
+
+    Merge pull request #14 from F1l00/master
+    
+    Laus & Rosa Sounds (Nero)
+
+commit 72d87cdcfe3c7e3829b62b2d78474d54329d5661
+Author: Filo <filo0909@gmail.com>
+Date:   Sun Jan 31 15:52:36 2016 +0100
+
+    Laus & Rosa Sounds (Nero)
+
+commit c6ff75bdbae350d46daa09eb6c991af295694336
+Author: Filo <filo0909@gmail.com>
+Date:   Sun Jan 31 15:52:16 2016 +0100
+
+    Lasu and Rosa Remove
+
+commit f8d70f06985ebb5ab4b96995b232963d13194a0e
+Author: Filo <filo0909@gmail.com>
+Date:   Sun Jan 31 15:48:41 2016 +0100
+
+    Laus & Rosa Sounds (Nero)
+
+commit b23bfbb3e3da222752129da0537e86760c04a41c
+Merge: 198a33b 30d8e03
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Sun Jan 31 06:48:20 2016 -0800
+
+    Merge pull request #13 from F1l00/master
+
+commit 30d8e0306328f7dc15c8f395a662b8caa9189b59
+Author: Filo <filo0909@gmail.com>
+Date:   Sun Jan 31 15:38:06 2016 +0100
+
+    Nero Sounds and Scripts
+    
+    + Caster (5th) Volume increase
+
+commit 198a33b9ae7f4d874c2db132601c4a2b33e57a36
+Merge: 845db42 f3dd778
+Author: Steve Yoo <hermit1007@gmail.com>
+Date:   Sat Jan 30 11:37:15 2016 -0800
+
+    Merge pull request #12 from F1l00/master
+    
+    Master
+
+commit f3dd778b51c7eb9fff527717f448c0cbaec6bd23
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Jan 30 20:31:49 2016 +0100
+
+    Caster (5th) Sound Files
+
+commit f98a8d2d7030ca60851278489102a9d7a4d4a0e8
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Jan 30 20:23:19 2016 +0100
+
+    Caster (5th) Soundevent Script
+
+commit 4c7193dbc31226fadaaf340560e24a8768b47f6c
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Jan 30 20:09:31 2016 +0100
+
+    Revert "Caster (5th) Sound Script"
+    
+    This reverts commit cf0f4e34b12bd89d63e53cf3e7dc81c883cee249.
+
+commit cf0f4e34b12bd89d63e53cf3e7dc81c883cee249
+Author: Filo <filo0909@gmail.com>
+Date:   Sat Jan 30 20:08:21 2016 +0100
+
+    Caster (5th) Sound Script
+
+commit 845db429f326a81a2c4a8d1f8015559a8962858c
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Jan 30 08:05:40 2016 -0800
+
+    herolist
+
+commit 8bb3113632dbabd1cf200d9fa799d938978a380f
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Jan 29 19:35:19 2016 -0800
+
+    v1.40c
+
+commit 7ddc11fdea98050fa7e258a3f976d0a961637d67
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Jan 29 18:45:15 2016 -0800
+
+    savepoint 2
+
+commit 01685b2263a0a4f2ec76ded6dc10c7e9753efb5b
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Jan 29 17:30:14 2016 -0800
+
+    savepoint
+
+commit 864cebc3d2d4d2a6f8343a30a3f21568af65254a
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Jan 27 12:30:46 2016 -0800
+
+    1/27 Hotfix
+
+commit 018589d13828f635a96b8a576d81c74387daa1ee
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 24 13:56:55 2016 -0800
+
+    v1.40b
+
+commit 958a1f83e87d224747c58db715a2819e22da7001
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Jan 22 19:08:38 2016 -0800
+
+    v1.40
+
+commit c162ad4a43cf2e6bdb8e3adb8a855f8a1eac93b0
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Jan 18 14:46:31 2016 -0800
+
+    v1.39b
+
+commit 26496a824f2c3b7208193d00a372a63ea6e982fe
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 17 23:09:31 2016 -0800
+
+    v1.39
+
+commit e2884cb1ad4c356cef94b62d20f7b51e65441842
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 17 14:20:42 2016 -0800
+
+    Fix and add 1x1 collisions
+
+commit 2041b654fa6787db8db4c55852dc42d97c853473
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 10 00:50:05 2016 -0800
+
+    v1.38c
+    
+    also includes Jeanne's assets
+
+commit 82f52de60d8f830777a7be065bb5b5f4f521f645
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Jan 3 14:20:56 2016 -0800
+
+    v1.38b
+    
+    uh oh spaghettios
+
+commit e07bb1efef7a619451e67d61cbe0cfdd98378154
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Jan 2 21:04:51 2016 -0800
+
+    missing bit
+
+commit a92c85acf7a6a457de4fd3f660d39b7192a15cc6
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Jan 2 18:41:01 2016 -0800
+
+    v1.38
+
+commit 9dc8e78357753593a6faa1524570cfdea31cd617
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Dec 31 11:31:09 2015 -0800
+
+    sync
+    
+    Ongoing mission:
+    Remove ApplyModifier KV and replace them with lua script
+    CC unification
+    Item mechanic changes
+
+commit 9deea1d9251d13c6bfd4b938b1bf0ee619c23e22
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Dec 30 23:39:58 2015 -0800
+
+    Add particle for Reincarnation regen
+
+commit 1719ab78a658d591ffed1e204870e8be43f6b86c
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Dec 30 22:33:12 2015 -0800
+
+    Tweak/add God Hand particles
+    
+    I also made the God Hand buff go away when Berserker's out of charges
+    because it was confusing me
+
+commit 9f338855795d8744a479a0f8de2b5ff31784dd44
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 28 17:57:42 2015 -0800
+
+    Tweak Fissure Strike particle
+
+commit 0b45b56950d490086af240eec528744ad52d7c35
+Merge: 5d2e3ab 3be3362
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 28 16:57:49 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit 3be3362c9fc5ee62f6a34e6990a377dbf229972b
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Dec 27 00:31:11 2015 -0800
+
+    v1.37b
+    
+    *china intensifies*
+
+commit 5d2e3ab66af196af11945393075f8ecef09b4ef4
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Dec 25 17:32:42 2015 -0800
+
+    Fix hrunting particle CPs (#6)
+
+commit 523f53380e117612e8e6c58b8ba7a4d451aea94e
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Dec 25 12:04:42 2015 -0800
+
+    Update the list of changed string since Sep
+
+commit 33aadff977c6fb331bf33e303f4294f3c2bf8d18
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Dec 24 03:51:36 2015 -0800
+
+    v1.37 Final
+
+commit 92aa7681b44fd776552502f40258f09153bb40ab
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Dec 24 00:01:28 2015 -0800
+
+    Change reference stack properties
+
+commit 99a310e5e3ed9df88dd665527c01154fad330cf7
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Dec 23 23:30:22 2015 -0800
+
+    Attempt at fixing sound issue
+
+commit 5f644eecf260a9b65f168c9622f4cd4aee9effb0
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Dec 22 23:25:05 2015 -0800
+
+    Some precache statements
+
+commit e0db91564c7d52ee4632062bb1fc283625c9b443
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Dec 22 21:58:12 2015 -0800
+
+    v1.37
+
+commit ff3afc942530c81f8a12aeb1d5e5bfb9e5fddbbd
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Dec 21 22:53:30 2015 -0800
+
+    Extra Assassin works
+    
+    Things left to do:
+    Finish implement combo(halfway through)
+    Attributes
+    Bugfix
+    
+    Will be released in v1.37, planned to ship tomorrow evening
+
+commit acb6f4cacbf258e6a7d9d13d137a35a90d735707
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Dec 20 15:26:02 2015 -0800
+
+    Fix a bug where FA illusions were not receiving default ASPD bonus from AGI
+
+commit d90f210773ffdbf581b916d095e142228277ead9
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 14 02:07:05 2015 -0800
+
+    Make my poor lua stop crashing on map launch
+
+commit 68eb22a32de9ee9fdbd0bf28adfb3899c3468313
+Merge: ee1e09f c84b810
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 14 01:59:58 2015 -0800
+
+    Merge branch 'experimental'
+    
+    Conflicts:
+    	game/dota_addons/fateanother/scripts/vscripts/archer_ability.lua
+
+commit ee1e09f335072aededfcbe56516068b4141dbec8
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Dec 14 01:37:25 2015 -0800
+
+    v1.36b
+    
+    Lancelot had issues with the un-rubickness(his spellbook dynamically
+    adds and removes empty slots), and his Nine Lives attempted to reference
+    Courage ability which he does not possess. Fixed both
+
+commit 0affe282877d0a56b73f00eec782a002d5091004
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Dec 14 00:13:57 2015 -0800
+
+    Fix the woe of batch string replacement
+    
+    DeductCourageDamageStack
+
+commit c84b810e9764135c3ab23b88dab6e9fcb4d2cab6
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Dec 9 23:39:00 2015 -0800
+
+    Display time to next Overedge stack as buff duration
+
+commit 5f05ab3f8dcf7bd5ac115e88d3c8ab457facd166
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Dec 9 00:22:30 2015 -0800
+
+    Tweak Nine Lives particle
+
+commit 659e3340c186c268cfe22e8f388edb64495dffc9
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 23:51:10 2015 -0800
+
+    Make Overedge look very slightly less clowny
+
+commit ae49bde5e0109aa380ec86e05cc186232151a48a
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 23:24:43 2015 -0800
+
+    Fix UBW particle flickering in FoW
+    
+    lol why the fuck does this work
+
+commit 7e538e15308ca10f7921ad05f73e79806184904b
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 23:18:45 2015 -0800
+
+    Fix saber alter's improve ferocity tooltip
+
+commit fdb0dbec27a0881a57f835e29a479f9ffec287fd
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 22:39:21 2015 -0800
+
+    Change Overedge from hidden to unlearnable
+
+commit 9543b6bf4f9b284dee894946090eb6642c8f0f12
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 22:37:04 2015 -0800
+
+    oops
+
+commit 13a6ead9bec5fbde68eb353332752476e426dd9f
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 22:09:39 2015 -0800
+
+    Fix ability layout bug
+
+commit 1998dbde9a40fd1166118471beec050d1b82b594
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 17:11:13 2015 -0800
+
+    preliminary ability layout fiddling
+
+commit 2aa97dfed5b00e8ad278f0cc2d6cf368ef3b69da
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Dec 8 17:01:43 2015 -0800
+
+    fix nine lives particle dependency (oops)
+
+commit cc55d708ef2e2cd5d92730fb6d0e00d9cc9e155f
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 7 22:35:30 2015 -0800
+
+    clean up some compiled files
+
+commit 810583618961702dede23c471c8037f38c93b78f
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Dec 7 22:06:09 2015 -0800
+
+    Update Nine Lives particles; tweak ability code
+    
+    I changed Nine Lives slightly and Courage's damage buff's interactions
+    with abilities in general, because the global Courage ability handle
+    causing lua errors was driving me very slightly insane
+
+commit 3288b5908dcb0d2666cd2578bd7267dbf596e77a
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Dec 7 14:16:49 2015 -0800
+
+    Hotfix 2
+    
+    spaghettierino
+
+commit e3336a783825119dae142e0350ba70bc366bd2de
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Dec 7 00:47:37 2015 -0800
+
+    Hotfix
+
+commit 924128d3845eb5ac70bd6b6f9666a7ff4a97750e
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Dec 6 23:19:50 2015 -0800
+
+    v1.36
+
+commit 295d9b0d8336d7a0b78b8486ed43729f12724ff4
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Nov 29 00:50:38 2015 -0800
+
+    v1.35
+
+commit 906a56621dd10e8a27755504a41599aaab9070a0
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Nov 28 22:49:56 2015 -0800
+
+    sync
+
+commit 61ce313f702862bccd507837bb0be17d4057fd88
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 28 22:42:51 2015 -0800
+
+    add what is almost a fix to ubw particle bugginess
+    
+    i hate particle visibility so much
+    it is going to make me cry ;_;
+
+commit 991c3b9a0d9d27c543f4321cff9a64083400d9f0
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 28 16:50:50 2015 -0800
+
+    Update particles for Courage
+
+commit f9441d7cbf4356da80094869c026bee97861e3ab
+Merge: 7968e38 2db8fad
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 28 11:12:27 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit 2db8fad1059c972685302c43820e7ff358d447de
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Nov 28 00:12:04 2015 -0800
+
+    v1.35 base build
+    
+    missing Assassin's clone implementation
+
+commit 7968e38362fa5f5e1036a13a79d8a129f48e8026
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 27 18:26:56 2015 -0800
+
+    Update particles for Berserk
+
+commit d1e4d278a0f630b0dd1e67546fdc1d58d0d39d5e
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Thu Nov 26 15:54:06 2015 -0800
+
+    Fix Hecatic Graea/Fiery Finale targeting
+    
+    Previously, damage was targeted in a square area around caster
+    (resulting in fire outside of Saber's arena's area and hecatic using a
+    really weird smaller radius?); changed it to actually find random targets
+    in circular areas of the stated respective radius
+
+commit d930cd37605c4dd61bb638bc282e0b57dd93cc21
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Thu Nov 26 09:24:12 2015 -0800
+
+    Edit extra assassin strings
+
+commit c5fab0452061d832867fa1a3af1117a6bac475dc
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Nov 25 21:57:10 2015 -0800
+
+    Update Extra Assassin strings
+
+commit d437962a1f374fa0a4b4a6c2fb5e02093cad414e
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 25 10:22:26 2015 -0800
+
+    Invictus Spiritus fixes
+    
+    Fixed not-revoked condition not respecting all revoke effects, added a debuff
+    showing cooldown, tweaked tooltip
+
+commit 2315b22f477d2a60fb3194767b9f86542d31689a
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Nov 24 22:52:34 2015 -0800
+
+    Update statecollection to v4, slight change to Tsubame Gaeshi particle
+    
+    color scheme changed to blue from purple
+
+commit 376d607512e8096d2f55287a93ca4fef0e4920aa
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Nov 24 00:22:31 2015 -0800
+
+    statcollection
+
+commit 1cf26175e56f0b36a04321e4c87e1bf885adf215
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Nov 23 17:42:21 2015 -0800
+
+    Tweaked Tsubame Gaeshi particles
+
+commit 94df06c9646114f9236b0d3f798266bf2adc2875
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Nov 22 11:06:39 2015 -0800
+
+    RB bugfix
+    
+    I am retarded LOL
+
+commit 55c19c3de1eac4ba3058d3726423492832f26f3d
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Nov 22 10:43:33 2015 -0800
+
+    checkpoint
+
+commit 05d803f9cbeefe5ce155abce431cf35520b13958
+Merge: 658c177 24d4326
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sun Nov 22 08:08:09 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit 658c1777a864bbfc5cae20de7f6b64c716ec42ac
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sun Nov 22 07:43:17 2015 -0800
+
+    Fixed enuma particle flickering, updated max enuma elish particle
+
+commit 24d432696f48b21b024eed9dbdc6b641ba59c2ad
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Nov 21 22:41:34 2015 -0800
+
+    Missed something from last commit
+
+commit 803d27108c08ded3ba3c7a74b68aff2706c6731e
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Nov 21 22:30:21 2015 -0800
+
+    v1.34d
+
+commit 0e21ec8d039c0bdbbbb1cb219a615cc6aadf75b9
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 21 03:40:19 2015 -0800
+
+    added cracks to enuma elish particle + some other tweaks
+
+commit 9d27bd54f59d4e33c20b2a8d9d17e8f49aa425a8
+Merge: fa97e4f d9812cc
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 21 01:50:55 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit fa97e4f84bfc0a9a15c60b44587671eb22063cd2
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 21 01:48:09 2015 -0800
+
+    Updated Enuma Elish projectile particle
+
+commit d9812cc5f2fd76dc5af117cc5b55a5e4260de84c
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Nov 20 22:49:00 2015 -0800
+
+    Update Extra Assassin assets
+
+commit 52b62b7db4d1cdf9315a40c6ccda35782eddf1aa
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Thu Nov 19 22:53:56 2015 -0800
+
+    Fix for Sacrifice not being applied consistently
+
+commit 51b4b558523fc11a6785b4943fb0494446836eb6
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Tue Nov 17 01:53:29 2015 -0800
+
+    Updated UBW initial cast particles
+
+commit 2e0fa34d9ffb516b34fbfdd9041619a94d6fb619
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Nov 16 00:07:37 2015 -0800
+
+    Fixed Hecatic Graea's initial barrage targeting
+
+commit 3f38739fd82d281a37cb5e27bd72857971fc1c37
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Nov 15 23:32:30 2015 -0800
+
+    v1.34c
+
+commit f5f76ee541fcbed7b32b17e09e4e07e83c95c1ec
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Nov 15 18:05:14 2015 -0800
+
+    Bugfix to Hecatic Graea
+    
+    Found some wrong parameters while testing
+
+commit 0cabd68b3d62d1480ed83a3a0e8cb520624ab21b
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sun Nov 15 08:26:19 2015 -0800
+
+    fixed some debug circle draws being left on
+
+commit b599f1f4b0c80437254b892c12ef33b9c2287ece
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 14 23:56:30 2015 -0800
+
+    Caster tooltip tweaks
+
+commit 81fe3e9e5bcc85aedabc138861bb736a5e88d7ac
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 14 23:56:12 2015 -0800
+
+    updated HGP particles, consolidated HG/HGP code a little
+
+commit 4362f3a8f5dd7cde52f88184c37ab8608c032a23
+Merge: 5c069d7 51cd06e
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Sat Nov 14 22:05:17 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit 5c069d78994d3ac2c81e76631357ec9d7c92f71a
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 13 16:43:02 2015 -0800
+
+    fixed divine words particle visibility
+
+commit 51cd06e8ea727d3aeadacc396f1095625573b9c2
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Nov 13 10:03:56 2015 -0800
+
+    ACT_DOTA_DISABLED
+    
+    added disabled animation for two models, although it doesn't seem to do
+    much
+
+commit e582fd47895ec369b4d16a8aef9115770b7c5c2f
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 13 05:50:24 2015 -0800
+
+    Hecatic Graea particle tweaks
+
+commit 9804474a31105d3155bb8d783977acd3d860a9eb
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 13 05:26:13 2015 -0800
+
+    Fixed Hecatic Graea hitting impassable positions
+
+commit 4bb086e17d30f06362220e2728ba99865ead5078
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 13 05:00:39 2015 -0800
+
+    Updated Caster's Hecatic Graea particles
+
+commit 12902faa3ac3fc384f5fb9eae285422f6671566c
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Nov 12 17:44:31 2015 -0800
+
+    v1.34b
+
+commit 9efe33e8a60ed3f4577aeb571e5caec28c97bfc9
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Nov 12 01:58:54 2015 -0800
+
+    v1.34
+
+commit 755d5d468d45486635a00ccb3896c82254137271
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Mon Nov 9 11:10:08 2015 -0800
+
+    Saber alter Excalibur particle update
+
+commit 60c0a9ece7dc41c990398f76b67cfc884cb7a569
+Merge: 914bb2a 138dea7
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 6 20:54:15 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+
+commit 914bb2a892e33b8cb33b706928a58eb90a1b3960
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 6 20:52:34 2015 -0800
+
+    Saber particle updates: Max Excalibur, Strike Air
+
+commit 91716fff3a68658148a77e9c567befea8091066d
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Fri Nov 6 11:16:58 2015 -0800
+
+    Fixed saber ability particle precaching
+
+commit 138dea7b7c955dc885dc80922063019c277e3f64
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Nov 5 13:30:24 2015 -0800
+
+    Add video link to Readme
+
+commit 3dc007f7b5eee87b7538c7f7d62205a8ab5cd9c3
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Nov 5 13:21:46 2015 -0800
+
+    Make Readme a bit more pretty
+
+commit 66fe235426fcf7748aeb381c4e55f0eeecd0a64d
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Nov 5 13:10:34 2015 -0800
+
+    Remove outdated documentations
+
+commit 153fe7a3cdafd28326adeb7dccf95452df837923
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Nov 5 13:09:44 2015 -0800
+
+    Geez readme has been missing for 11 months
+
+commit e6c22f4f0dfbfdb98e5d2306746570c69dcc80b4
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Nov 5 01:19:05 2015 -0800
+
+    v1.33b
+
+commit 92c4cb5f315501afe7e008813f05e505f8590b7d
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 4 23:10:59 2015 -0800
+
+    Saber tooltip tweaks, try #2
+
+commit 6603244240a5a94ea382e56d50a3c72ec900945b
+Merge: 8a5e6d2 66b8379
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 4 23:05:24 2015 -0800
+
+    Merge branch 'master' of github.com:dun1007/fateanother
+    
+    Conflicts:
+    	game/dota_addons/fateanother/resource/addon_english.txt
+
+commit 8a5e6d28b049bd1d728680eb236590881df98c0d
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 4 22:59:18 2015 -0800
+
+    these binaries are making me so sad so i killed them
+
+commit 97588e82ccf84e59b783886f326e93a9a11d41ed
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 4 16:11:16 2015 -0800
+
+    Saber tooltip tweaks
+
+commit 243c8d864bebad9c01d9952ecdd9a98c91400063
+Author: Ethan Feinberg <sneakcow@gmail.com>
+Date:   Wed Nov 4 15:51:03 2015 -0800
+
+    Saber particle changes: Caliburn, Excalibur, Avalon
+
+commit 66b8379f5c87993ee050d30bbb39abb245bf794a
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Nov 2 18:52:18 2015 -0800
+
+    v1.33
+
+commit 0eaf98469d9b03a5d8435ea3d3956acee2d98ead
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Oct 25 13:31:14 2015 -0700
+
+    1.32c
+
+commit 122ee42bef944a56591e3f55fc332f5b21e12bb7
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Oct 24 22:15:41 2015 -0700
+
+    1.32(timer UI, master panel)
+
+commit d4357c8319bee1443cfbe783ce5c6b1d4b6bb197
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Oct 20 09:56:39 2015 -0700
+
+    Sidepanel
+
+commit b84d1a2e122b035ab91c40c7ec3e6cdb15d85576
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Oct 18 10:47:51 2015 -0700
+
+    1.31
+
+commit 564a67a183b74c6e5f927263ca3b2fd541199090
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Oct 17 14:29:57 2015 -0700
+
+    sync
+
+commit c55bd6392a59bcac326249fea5e3b1b23fa55899
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Oct 16 10:18:40 2015 -0700
+
+    Checkbox
+
+commit 36c0683be487315b4a5c114f7cfc488f2ed95e97
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Oct 15 12:15:09 2015 -0700
+
+    Inventory
+
+commit 130712327f3b0531d6581eaee357adba44db2e58
+Author: Steve <hermit1007@gmail.com>
+Date:   Wed Oct 14 12:49:56 2015 -0700
+
+    multiteam scoreboard, vote panel
+
+commit 449d739e061c54d94474096cf107651649d38077
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Oct 13 09:59:52 2015 -0700
+
+    sync
+
+commit 76f8bd0df1a0232861fa110c8fedce584d1fb22a
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Oct 10 19:54:55 2015 -0700
+
+    1.3
+
+commit 26a05e542347a2141bd4db7cdaf84da78697fd23
+Author: Steve <hermit1007@gmail.com>
+Date:   Thu Oct 8 12:13:45 2015 -0700
+
+    sync
+
+commit e9a0743f7fd66cb87c1357ccbfde5b8bf59ea085
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Oct 3 16:10:46 2015 -0700
+
+    1.23
+
+commit 764f4cd22917c8f61bc02640712d7b1c5b6f01b4
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Oct 3 02:00:02 2015 -0700
+
+    Tamamo Savepoint
+
+commit a1d23cd16c1b55e2f098c46694c1f1bb0f61c755
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Oct 2 09:59:41 2015 -0700
+
+    savepoint
+
+commit 062655414f98afcd7fe08c68a227d9419e6e9257
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Sep 29 23:48:22 2015 -0700
+
+    SChinese compatibility
+
+commit ac4a1073de427d415f22234c209bbc795064bc79
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Sep 29 18:14:36 2015 -0700
+
+    savepoint
+
+commit f342c1087d793e6c96a7411fc13ced542a2c8b8e
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Sep 27 22:37:51 2015 -0700
+
+    Beta 1.22
+
+commit 019c63ace74e4ce468630f0250d138297eb270c7
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Sep 25 22:03:12 2015 -0700
+
+    checkpoint
+
+commit 83d7a0a89ca1dfef3d9d8acd5562408ea4405106
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Sep 22 09:33:15 2015 -0700
+
+    sync
+    
+    1
+
+commit 5f03a7378808f877022fd02813d3705230f2681b
+Author: Steve <hermit1007@gmail.com>
+Date:   Sat Sep 19 02:53:26 2015 -0700
+
+    Beta 1.21
+
+commit 43f5b31f0987f29ec5fa184ac774f4f6b01e0fa1
+Author: Steve <hermit1007@gmail.com>
+Date:   Tue Sep 15 09:56:20 2015 -0700
+
+    latest
+    
+    11
+
+commit dd19ab3985a931b2ffb2552b14ae3afec20fe7b5
+Author: Steve <hermit1007@gmail.com>
+Date:   Fri Sep 11 00:05:38 2015 -0700
+
+    9/10 Update
+
+commit 9e8e8c984a2360990e9335ce32395f1395c472df
+Author: Steve <hermit1007@gmail.com>
+Date:   Mon Sep 7 13:48:53 2015 -0700
+
+    9/7 Patch
+
+commit b24a0a30756c917f23824504d4c5225ff4da2fcf
+Author: Steve <hermit1007@gmail.com>
+Date:   Sun Sep 6 21:48:32 2015 -0700
+
+    9/6 dump
+
+commit 45079af2b9392258edc19a36c4acf9f60d4f0bb2
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Jun 28 23:51:10 2015 -0700
+
+    28th June Breakpoint
+    
+    Last stable version before code structure overhaul
+
+commit 8669844171965d778d0b249b65c6a8ec38f70ce6
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Tue Jun 23 08:42:16 2015 -0700
+
+    June 23th Patch
+
+commit 1e9dcfb3553c7546fe8c9ae392b8b5937fd5fdeb
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Jun 22 08:56:12 2015 -0700
+
+    June 21st Update version
+    
+    Refer to Fate/Another steam webpage for patch logs.
+
+commit 26327854799b12758f456d46e8a64f35ce749af7
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Jun 21 14:27:30 2015 -0700
+
+    Source 2 update
+    
+    Milestone
+
+commit 00598934a1e58f39ecec08dea4117fcdec34b65d
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Jun 17 00:46:16 2015 -0700
+
+    Finish alpha version of Fatepedia
+    
+    - Finished first push of Fatepedia on Scaleform. Subject to change as
+    Panorama hits the bed
+    - Renamed skill images
+    - Added Fatepedia tooltips
+
+commit 753c88dfc983a047042dbcf321eef81a140b4ab0
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Jun 11 11:19:40 2015 -0700
+
+    Tooltips
+
+commit 66d49365d229a1a2cb6457c63e7b02bdd29412b5
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Jun 10 08:28:41 2015 -0700
+
+    Add Scaleform resource for Fatepedia
+
+commit 6dc3a772163c431d86db38cb2cbb53357b3792f6
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Jun 6 00:46:12 2015 -0700
+
+    Archer changes
+    
+    * Archer(5th) *
+    - Broken Phantasm stun duration now scales with level(1/1.3/1.6/1.9/2.2)
+    - Rho Aias shield durability reduced to 600/750/900/1050/1200, but
+    passively grants 0/100/200/300/400 health
+    - UBW ambient projectiles are now fired twice as slowly
+    - Sword Barrage max channeling duration increased to 5 seconds and
+    damage now scales with UBW's level(200/250/300/350/400).
+    - Nine Lives damage now scales with UBW's level(440/570/700/830/960
+    total)
+    - Improve Projection attribute changes:
+    * Removed bonus damage on ambient projectile
+    * Kanshou Bakuya deals (INT) bonus damage and reduces Sword Barrage's
+    cooldown by 1 second
+    * Sword Barrage deals (STR+INT)*2 extra damage
+    * Nine Lives' each strike inflicts 5% of target's current health as
+    bonus magic damage
+
+commit 9ee83a22953954bae4a37a8ce3763d9d71bb580b
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Fri Jun 5 01:23:15 2015 -0700
+
+    June 5th Patch
+    
+    * General *
+    - Fixed tooltip errors and improved consistency of wordings.
+    
+    * Saber *
+    - Caliburn casting point increased to 0.8 seconds, but impact is now
+    instant(no longer launches invisible projectile). Cast range buffer
+    increased to 200.
+    - Invisible Air passively grants 10/20/30/40/50 attack damage
+    - BAT decreased to 1.15
+    - Strike Air now scales with Invisible Air and Caliburn
+    
+    * Berserker(4th) *
+    - Same change to Caliburn
+    - Base MR increased to 10%
+    
+    * White Saber(Extra) *
+    - Fixed a bug where spell block was not working against WSaber's spells
+
+commit d281464fa24f9c0a7ddb26dda14a75b3c849018d
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Jun 1 00:33:03 2015 -0700
+
+    June 1st Patch
+    
+    - Presence detection now becomes enabled 1 minute into round(as it
+    should have been the whole time)
+    - Finalized Tamamo's tooltips, may take about a week to build up skills
+    and polish stuffs
+
+commit e25f970dd29bab67d0c9f7aadec2d0a0304d3ba5
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed May 27 23:16:03 2015 -0700
+
+    Bugfix
+    
+    - Added 0.1 second casting point to Archer(5th)'s combo in order to
+    prevent him from being able to cast combo outside occasionally
+    - Updated Tamamo's assets
+
+commit c085fe8daa7bb585dfd106b53a9a375976fff5b0
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon May 25 00:33:09 2015 -0700
+
+    Add Tamamo's Tooltip
+    
+    - Slightly adjusted custom timer duration
+    - Improved Lancer's HB particle
+    - Added tooltip for draft version of abilities
+
+commit 004b22af2cc9fab2944960f3e89385c72d4b2b24
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu May 21 23:24:47 2015 -0700
+
+    May 21th Update
+    
+    * White Saber(Extra) *
+    - Removed health regen from Artificial Sun aura effect
+    - Blade of the Devoted damage scaling adjusted to 370/425/480/535/590
+    - Fixed a bug where Blessing of Fairy was overlapping with Divine
+    Meltdown
+    
+    * Caster(5th) *
+    - Fixed a bug where Argos attribute was not working
+    - Removed bonus magic resistance from Argos attribute
+    
+    * Rider(4th) *
+    - Forward! no longer has 0.3 second casting point. Duration increased to
+    1.6/2.2/2.8/3.4/4.0
+    
+    * General *
+    - Army of the King and UBW now display the exit location on minimap
+    - Added custom UI for round timer
+    - Updated tip quotes
+
+commit 7724779dd1b24d7bf80d26f00e24b3ebebf679eb
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon May 18 18:51:33 2015 -0700
+
+    May 18th Update
+    
+    * Lancer(4th) *
+    - Replaced model
+    - Attribute 'Double Spear Strike' mana cost reduced to 18, and
+    'Rosebloom' to 12
+    - Warrior's Charge slows primary target by 50% for 2 seconds
+    - Gae Buidhe range buffer increased by 150
+    - Gae Dearg range buffer increased by 100
+    
+    * Red Saber(Extra) *
+    - Updated recommended items
+    
+    * Avenger *
+    - True Form no longer increases damage. Health bonus increased by 100 on
+    all levels
+    - Base damage reduced by 8
+    - Base health reduced by 50
+    - Stat gain per level changed to 0.95/1.3/0.75
+    - Murderous Instinct critical damage reduced to 200% on all levels.
+    Cooldown reduced to 16 seconds
+    - Unlimited Remain minions last for 45 seconds, down from 75. Explosion
+    damage increased to 160/185/210/235/260
+    
+    * Lancer(5th) *
+    - Replaced model
+    - Fixed a bug where Lancer could queue abilities while spellbook is open
+    to activate Rune Magic twice
+
+commit 444460f7971f96a83e28bd8a8bdd549870584b34
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon May 18 01:06:33 2015 -0700
+
+    May 17th Update
+    
+    - Added Gawain
+    
+    * False Assassin *
+    
+    - Removed passive component from Heart of Harmony
+    - Tsubame Mai's 7 slashes can critically strike
+    - Vitrification now removes global cooldown from Heart of Harmony and
+    turns Assassin invisible for duration.  Quickdraw damage amplification
+    removed.
+
+commit b7e76f9d780f801411262d3210b315cde08514f8
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat May 16 02:47:30 2015 -0700
+
+    Finish Gawain basic abilities
+
+commit a4e28317490db646ab2857446ffa390b6b1b4576
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed May 13 09:25:29 2015 -0700
+
+    Gawain Checkpoint
+    
+    Return back to this commit when problem arises
+
+commit 4dbcd37b35c2eb5ef5d9171dffd388bd6361403e
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon May 11 00:20:54 2015 -0700
+
+    May 11st Update
+    
+    * Red Saber(Extra) *
+    - Gladiusanus Blauserum max damage increased to 320%, attribute now adds
+    AGI*5 + STR*5 damage instead
+    - Attribute 'Pari Tenu Blauserum' mana cost reduced to 10
+    - Attribute 'Invictus Spiritus' mana cost reduced to 10
+    - Attribute 'Soverign's Glory' mana cost reduced to 15. Removed ally
+    buff component. Now allows Aestus Domus Aurea to deal 35% more damage
+    whether enemies are facing Saber or not
+    
+    * Lancer(5th) *
+    - Fixed a bug where Lancer could use Relentless Spear during Gae Bolg
+    cast
+    - Relentless Spear atttack speed bonus increased to 50/100/150/200/250
+    
+    * Saber Alter *
+    - Mana Burst and Unleashed Ferocity now apply ministun on each instance
+    of damage
+    - Unleashed Ferocity now deals damage based on current health of enemy.
+    Attribute adds (STR+INT) bonus damage.
+    
+    * True Assassin *
+    - BAT decreased to 0.8
+    - AGI gain per kill increased to 0.75/1.5/2.25/3.0/3.75
+    - Weakening Venom attribute now allows Dirk to reduce -5 strength.
+    Duration increased to 10 seconds
+    
+    * General *
+    - Fixed a bug where Command Seal could be used while dead
+    - Added minimap icon to master units
+
+commit 3ad5836c0f4b28be34b105fe653d253ba273f8f7
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat May 9 03:07:22 2015 -0700
+
+    Minor bugfix
+    
+    - Fixed a bug where Imperial Privilege's cooldown was not reset on
+    respawn
+    - Fixed a bug where Aestus Domus Aurea was put more than once at the
+    same time
+
+commit 9fa9eb4e15d0117e742944f74f6548f8e39a2398
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat May 9 02:39:23 2015 -0700
+
+    May 9th Update
+    
+    - Reworked FA's Heart of Harmony and Combo
+    - Added Red Saber(Extra)
+    - Fixed a bug where DS was not able to use combo after acquiring certain
+    attribute
+    - Fixed a bug where -bgmoff command was not working for some players
+
+commit 942e785296023c71f0c6a93089f2ff9fbaff47c5
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Tue May 5 21:34:31 2015 -0700
+
+    Update Gawain's ability template
+
+commit 99ac9171bfb81822e78aa90d32245f796a36128b
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Fri May 1 11:55:16 2015 -0700
+
+    Update Nero's ability template
+
+commit 6b4991c453d48c6224e2a14984f513a3eea90749
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 27 01:04:22 2015 -0700
+
+    Merge
+
+commit 4b25dbf12b92983c02d9e16ad42d8d821a23e99f
+Merge: 1e2a12f 3875ab2
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 27 01:02:53 2015 -0700
+
+    Merge
+
+commit 1e2a12fc026783fdbe5f14d3907abef863b7fbad
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 27 01:00:39 2015 -0700
+
+    Merge
+
+commit 3875ab2ffef1fa35af7e559a69995dd17463895c
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 26 02:24:50 2015 -0700
+
+    Update Gawain and Li Shuen's assets
+
+commit 710ec24a774f8455860921b6c11ed375b5cd8af7
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Apr 23 01:48:26 2015 -0700
+
+    Reworked FA, Added Nero's tooltips and assets
+    
+    - Heart of Harmony remade. Combo changed to Tsubame Mai - Swallow Dance.
+    Refer to addon_english.txt
+
+commit 7257f0f3be5f0bdfa7dcf92f61872b39ed65efe1
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 19 13:54:59 2015 -0700
+
+    Retrieve Caster's item sprites from old commit
+
+commit af5cbb8a0a29671ba4c63e644d0c77f4de307ac2
+Merge: b7b3e68 0b71a88
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 19 13:45:13 2015 -0700
+
+    Merge branch 'master' into stable
+
+commit b7b3e6818f729ad6b3fa6655cfe956c632f4e081
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 19 13:41:41 2015 -0700
+
+    Stable version with ZC
+
+commit 0b71a8868f5dc1fb6717cf04574082b2b3fb02f1
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 19 11:13:29 2015 -0700
+
+    Savepoint
+
+commit 834ec41786b7b3f72b169f1d54a86f3dd77065df
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 18 14:31:49 2015 -0700
+
+    Revert "Revert "April 15th Update""
+    
+    This reverts commit 82f7a43641201d11336ffe2e8b7f9b0dd82bd75d.
+
+commit 82f7a43641201d11336ffe2e8b7f9b0dd82bd75d
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 18 14:31:37 2015 -0700
+
+    Revert "April 15th Update"
+    
+    This reverts commit d9960b1ab4645c14628b7a690f476d5682b97128.
+
+commit beb7f3444dd2566538762af35d6bcf04db9be893
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 18 10:49:50 2015 -0700
+
+    Fixed minor bugs with Zero Caster and added tooltips
+
+commit b1238c54d2fc9c17cedd7586c580c3e2fc2ab25d
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 18 03:04:34 2015 -0700
+
+    April 18th Update
+    
+    - Enabled Caster(4th)
+    - BGM now plays 5 seconds after game starts(this is an attempt to fix an
+    issue where some players do not start with BGM)
+
+commit aa941b8eab80326519bd48e52a0557ab74629741
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Fri Apr 17 04:36:29 2015 -0700
+
+    Update Zero Caster abilities
+
+commit 79143e4f8c68cdb83ef592b684c9891400658049
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Thu Apr 16 01:02:05 2015 -0700
+
+    Update Zero Caster's assets and ability template
+
+commit d9960b1ab4645c14628b7a690f476d5682b97128
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Apr 15 18:37:52 2015 -0700
+
+    April 15th Update
+    
+    - Fixed a bug where picking certain heroes crash 2 other people
+    - Fixed a bug where Nine Lives does not move onto slash phase but caster
+    remains frozen
+    - Fixed a bug where combo would not activate when stat list was open on
+    Master 2 unit
+    - Relieved the lag on activating Army of the King and Phalanx
+
+commit 82c7aefcce2cc466cc823cf49e1eb34265c9da14
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Apr 15 12:29:04 2015 -0700
+
+    Performance optimization
+
+commit c9c84c916f46eb39c9f0dc001e7da8b79ec15650
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 13 19:38:40 2015 -0700
+
+    April 13rd Update
+    
+    - Added suggested item builds to Rider(4th)
+    - The round system now declares winner based on current score standing,
+    regardless of whether casualty occured in that round.
+    - Fixed a bug where Saber Alter's Mana Catalyst stack was not
+    initializing after death
+    - Fixeda bug where Rider(4th)'s basic ability layout would be altered in
+    some circumstances
+    - Added effect and sound to Army of the King
+    - Changed Nine Lives' dash mechanism
+
+commit 1585a6f1a59ff954d897bec9efc368727af8c2df
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 13 08:50:33 2015 -0700
+
+    Remove Chinese stuffs temporarily
+
+commit 9eefdcbf8f986c008175f174dcae3ba854de59aa
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Apr 13 01:19:25 2015 -0700
+
+    April 11st Update + Zero Caster stuffs
+    
+    - Iskander released
+    - Added Gilles' assets and tooltips
+
+commit 95add5c6f52b1589a5649e5e38864be2df988ea4
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Wed Apr 8 01:30:48 2015 -0700
+
+    April 8th Update
+    
+    - Increased visibility of beam abilities
+    - Fixed a bug where Lancelot could queue Knight of Honor after
+    activating Arondite
+    - Fixed a bug where Archer's Sword Barrage replaces Clairvoyance when
+    UBW was cast while Hrunting was active.
+
+commit 96eb80b96e9fe8a1a1d6ff1f53ce60dab0f2e4bd
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Tue Apr 7 02:09:10 2015 -0700
+
+    Small fix
+
+commit fa12a7e2c55bd6835519abff30f76aeb7b043680
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Tue Apr 7 02:00:09 2015 -0700
+
+    Update Iskander abilities
+    
+    Hopefully done by tomorrow?
+
+commit 509caeb62290002e6ebd300b374b39144b8b839f
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Apr 5 14:36:02 2015 -0400
+
+    Increase duration for diarmuid weapon trail
+
+commit 384f8f7a509a9028c121ebaa1dde227ee2b57db9
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Apr 5 02:45:14 2015 -0700
+
+    Implement AOTK interaction with UBW
+
+commit 1d23491e74e77229528c5d3951dd8ff9d57970b7
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 4 23:21:37 2015 -0700
+
+    Updated to pause mechanism and Rider particle
+    
+    - No longer restricts command, meaning you can queue ability while in
+    casting
+    - Beams now release towards direction caster is heading at the fire
+    - Removed ground spike from Bellerophon and smoke from Nail Swing
+
+commit f5c853a2405d7562680f07a2dc7ed847bf50fb31
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Apr 4 21:28:43 2015 -0400
+
+    Update Iskandar attack of the king particle
+
+commit 6929cf1f4d294d8eb5317b53e8221d91dcbec963
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Apr 4 17:46:37 2015 -0700
+
+    Update Iskander abilities
+
+commit ee3439d87037c29dd27f31faa93d0d119adfa9fa
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Apr 4 20:16:10 2015 -0400
+
+    Update attachment point on diarmuid
+
+commit 12ede956b1ffb096ea2de8d425f4dd97f10ad04b
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Apr 4 20:14:55 2015 -0400
+
+    Update new diarmuid weapon trail
+
+commit c425b46d29c22fc0bf010cdd9676916dc51ce32e
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sun Mar 29 10:42:33 2015 -0700
+
+    QoL changes
+    
+    - UBW now moves camera of players caught within to inside world
+    - Item can be bought now, even when you are selecting unit
+
+commit 256b7112fe196baf0ab9dfec45c8509139c882ab
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Mar 28 20:28:13 2015 -0700
+
+    Update Iskander's model and add soldier templates
+
+commit fa1141e576bbbb94243799f8ee0f9ea3a669d736
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Mar 28 13:27:21 2015 -0700
+
+    Update Iskander's abilities
+
+commit 4488655fd47ffa341a62e5f634d6fe86df005bd5
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Mar 28 13:56:47 2015 -0400
+
+    Update diarmuid weapon trail
+
+commit 9e262e7ecca4379e86d7ea879c8b61fa851f3530
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Mar 28 13:44:29 2015 -0400
+
+    Update green and red shield
+
+commit 731603dc2793c9324aeef8b5ebe62a7228753b42
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Sat Mar 28 10:40:51 2015 -0700
+
+    QoL changes
+    
+    - Increased hitbox of all heroes to 80 for easier targeting
+    - Forced random at 60 seconds is disabled for the time being
+    - Added better sound and particle effects for S and EX scroll
+
+commit 4a1f77fadd11745ab17ccbdb121fa47e7afd665f
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Fri Mar 27 14:42:55 2015 -0700
+
+    Update2
+
+commit 27a5fbefe65ce2cc51710200370cb98dddb516c3
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Fri Mar 27 14:40:30 2015 -0700
+
+    Add custom particle
+
+commit 6843da3c8f4e9e66c4e6d0965b3e7d1d18b0b9ad
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 27 14:07:00 2015 -0700
+
+    Fix symbolic link issue
+
+commit b5dffbc4776998feb35d0cef52e14054b1247fdc
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 27 00:24:24 2015 -0700
+
+    Remove unnecessary precache lines
+
+commit bd054c0533836c2b12f1707ed368460e89d19908
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 26 14:14:37 2015 -0700
+
+    Clean up files from remote repo
+
+commit 3acd05fa8e870855d3b9d957cd391bffcb75d0a3
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 26 14:12:33 2015 -0700
+
+    Revisit repo structure
+
+commit f99219c3cd6b247c507541ef1430cdea9252501b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 26 14:07:42 2015 -0700
+
+    Revisit repo structure
+
+commit 1cd55276bdb39ec7af2a8411a14363f2cdf5d6ac
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Mar 25 01:42:27 2015 -0700
+
+    Adjust Avenger's numbers a bit
+    
+    - True form health bonus increased to 300/400/500/600/700
+    - Blood Mark's casting point reduced by 0.1 second
+    - Unlimited Remains damage increased to 150/165/180/195/210
+
+commit 6f1bfdede3397c4ec42da770339c8c1e43bb0560
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Mar 25 01:15:47 2015 -0700
+
+    Finish Iskander's ability template and tooltip
+
+commit 89116557396d8a480be28a7fd66eb56ac6d7957c
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Mar 24 19:08:30 2015 -0400
+
+    Update Avenger's Verg Avesta particles
+
+commit adeaffe1e73a969b273b5b8d6d9fd85288e0afe6
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Mar 23 16:56:30 2015 -0700
+
+    Fix Teleport bug
+    
+    - Fixed a bug where teleport scroll allowed hero to target ward that's
+    already killed
+    - Improved particle and sound
+
+commit 9119178727f4ca56407d2feabfb1f44cac10f6b9
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Mar 23 09:12:43 2015 -0700
+
+    Update Iskander tooltips
+
+commit bce428a7ea583b323fac8a3065c8d81b13c46337
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 22 00:52:16 2015 -0700
+
+    Update recommended item list for Diarmuid
+
+commit 0f9aa3539674203f479fe2830a5b06f5d1f7086c
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 22 00:48:24 2015 -0700
+
+    Finish Diarmuid and fix Avenger bug
+    
+    - Fixed a bug where Avenger's Unlimited Remain values were 1 level
+    higher than current level values.
+
+commit f312a4ea2daf6846a46dc44076fca18da90372a5
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 20:05:46 2015 -0700
+
+    Adjust Caster's Hecatic Graea
+    
+    - Now drops ray only on untraversable area
+    - Ray AoE increaseed by 50
+
+commit 5d5ede241e0da018a4cfb14355a2fa85c7cd2e8a
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 19:20:33 2015 -0700
+
+    Fix blink bug
+    
+    - Fixed a bug where blinking into not traversable point would place unit
+    in unexpected location
+
+commit 178e7232413bd3b388b690194e2589d0e35ddf8c
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 18:13:21 2015 -0700
+
+    Add entity checker to prevent script from getting the nil handle
+
+commit 04b18967a206a2ff419b3a65689fdba6d5b3d830
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 16:34:03 2015 -0700
+
+    Update Diarmuid abilities and Fix Lancer and Caster bug
+    
+    - Fixed a bug where Rule Breaker purged target instead of hard dispel
+    - Fixed a bug where Rune of Disengage did not cleanse caster
+
+commit 1abe79c4b94ae8d00da48adcd43d92fe6b22919d
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 02:01:25 2015 -0700
+
+    Make QoL changes to FA's Tsubame Gaeshi
+    
+    Now teleports FA to the point100 range away in the direction of unit to
+    FA's original location, rather than giving random location determined by
+    space clear
+
+commit 827449ec12b9387584772c796483e9030991dc3e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 21 01:40:21 2015 -0700
+
+    Finish Diarmuid ability skeleton and icon
+
+commit 2eb38ed1ebb9f54c2690f98f6061d8817b12964c
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 20 09:09:23 2015 -0700
+
+    Update Diarmuid's ability format
+
+commit 635d0e9e9f4c9b31c4d9f3686300a60c01e096df
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 19 23:35:48 2015 -0700
+
+    Fix False Assassin and Caster bug
+    
+    - Fixed a bug where round system would terminate when FA dies leaving
+    clones behind
+    - Fixed a bug where Caster's Rule Breaker would not apply banish debuff
+    occasionally
+
+commit 2dab9a10b9b7e8afc196f836548759c819b4f47d
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 19 22:41:07 2015 -0700
+
+    Change encoding format of addon_english
+    
+    UCS-2 Little Endian option
+
+commit ec20d677b1e223e0b298aca93bf2f3c22144e384
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 19 21:28:03 2015 -0700
+
+    Finish Avenger, Fix Lancelot and Saber Alter bug
+    
+    - Fixed a bug where Arondite's level was reset to 1 when opening Knight
+    of Honor spellbook.
+    - Fixed a bug where Saber Alter would gain 53 attack per point after
+    acquiring Sword of Darklight attribute
+
+commit adedcf95ad51660cdd517959f9c97fa60a7ec44b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 19 03:11:57 2015 -0700
+
+    Finished Avenger abilities
+
+commit fcf80d40305692220f00ee57a9f59a082e6b7e87
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Mar 17 16:14:38 2015 -0700
+
+    Merge
+
+commit 1fc6f61134e522d20e595a032fa16d7a68fb3ec8
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Mar 17 19:14:05 2015 -0400
+
+    Update Avenger's Dark Passage particle
+
+commit 6338163cea0b0bd84c6c9aeb5ea6b5e3a25924f9
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Mar 17 15:08:43 2015 -0700
+
+    Updated Avenger abilities
+
+commit 2889cc6cbe998eaa7d451056bcd8e7b129b6ca06
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Mar 17 17:54:25 2015 -0400
+
+    Update archer_sword_barrage_impact_circle
+    
+    Now takes CP1 as radius
+
+commit 1f3fd5fcf6f9bc00fce3c3115bae7a72a2a81786
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Mar 16 23:12:49 2015 -0700
+
+    Fixed many bugs and updated effect and sound of some abilities
+    
+    - Fixed a bug where Spirit Link would not consider physical damage
+    reduction from armor when applying damage to secondary targets
+    - Fixed a bug where Rule Breaker's banish goes through Arondite's single
+    target immunity
+
+commit 63d0de64bef24cec8247f9aef5f27e07970e08e1
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Mar 16 21:10:29 2015 -0700
+
+    QoL update to command seal, and Lancelot bug fix
+    
+    - 1st command seal now displays duration in modifier section
+    - Other seals now display cooldown in modifier section
+    - Fixed a bug where Lancelot could not cleanse Enkidu
+
+commit 105534f8b02d7c567e5898b1f88f820fcaf1d2ad
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 15 23:25:52 2015 -0700
+
+    Fixed a bug associated with Spirit Link
+    
+    -Fixed a bug where MR was twice as effective on linked primary target
+
+commit f0742f73cfaecc0dd1cf1a2ba9d1d0e80753e1fb
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 15 17:11:04 2015 -0700
+
+    Fixed a bug where Lancelot's combo could be reset
+
+commit 85030ee512c211e5db0657f53adb7c997d727995
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 15 10:27:32 2015 -0700
+
+    Updated Avenger abilities
+
+commit 2c2785bc2983f0b185b2c092728d6da096b600ff
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 14 17:01:50 2015 -0700
+
+    Fixed Lancelot bug
+    
+    - Fixed a bug where acquiring attribute on Lancelot does not reduce
+    master 1's mana
+
+commit f9289ebdac3e9ccd82a06ebfbf62879270b5f0f2
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 14 16:24:14 2015 -0700
+
+    Fixed a bug with Archer and updated Avenger's skill template
+    
+    - Fixed a bug where UBW weapons would remain after round ended and
+    damage enemy heroes at respawn
+
+commit 62e5df86b4422c94318bccd7bf438e99ff274b81
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 14 11:21:52 2015 -0700
+
+    Re-enabled Spirit Link and Fixed Lancelot bug
+
+commit 4265935a6b78fd4deb298b99257134fe7f4ce99a
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 13 16:29:43 2015 -0700
+
+    Fixed Lancelot bug and added FA effects
+
+commit db6b29e93caea4c68dc40d5aa523b3b3b7a162a0
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 12 21:39:22 2015 -0700
+
+    March 12nd Update
+    
+    - Berserker(4th) enabled
+    - Fixed a bug where Rider's Breaker Gorgon would last forever
+    - Fixed a bug where TA could attack while in ambush
+
+commit 6fd98b62f74d5f8e4d4ada6af7f8a17fbde553ea
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 12 21:08:46 2015 -0700
+
+    Merge
+
+commit a73b8be3c04e9572497820b4f284cb3d7e42affa
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Mar 12 23:49:52 2015 -0400
+
+    Update Lancelot's Arondite particles
+
+commit 5026ed03aac849fe69173e9a574064f068a2d969
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Mar 11 15:01:33 2015 -0700
+
+    Fixed tooltips
+
+commit 5ae8d5a888c4910ad28aa04b36821fdd3c6f4c27
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Mar 11 00:42:47 2015 -0700
+
+    Added effect to Lancer's runes and Adjusted base stats
+
+commit 0d11796ac983d82ad40be3bf7b6bbc55af050d28
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Mar 10 19:21:38 2015 -0700
+
+    Updated Attributes
+
+commit 6b6011c0f65179a76f0b4969468f78397de8f4a8
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Mar 10 19:36:08 2015 -0400
+
+    Update Lancelot's SMG with new particles
+
+commit 5bdd6bb89847e8d7bad91784b8555aec5a54f9f9
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Mar 10 16:24:52 2015 -0700
+
+    Updated Lancelot's attribute and Finished nuke
+
+commit 989e6ac27ee71ab5a17a87f6d0c99ed02e0c7b52
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Mar 10 19:14:16 2015 -0400
+
+    Update Lancelot's SMG
+
+commit c2fc02f68211005ffc73bf747cad8a08b819f773
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Mar 9 21:53:11 2015 -0700
+
+    Updated Lancelot Nuke
+    
+    TACTICAL NUKE INCOMING
+
+commit fdf5f85964306b4d0cf453fec55072e88574a39b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 8 17:36:25 2015 -0700
+
+    Several bugfixes and Lancelot update
+    
+    - Fixed a bug where Breaker Gorgon would last forever
+    - Fixed a bug where TA could attack while invisible if auttoatack was
+    issued during fade time
+    - Completed Lancelot's QWER
+
+commit eee884a049048d46f75c4a8d512dd5b7ed27e040
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 8 01:13:44 2015 -0800
+
+    Updated Lancelot's abilities and attributes
+    
+    Still in progress
+
+commit 030d4569925f5ea598bf7cd4c6d16ccfdf3a99a2
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Mar 7 08:57:09 2015 -0800
+
+    Merge
+
+commit a2e2f96b6ec0d138e0acffe6103bac37e822c47f
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Mar 7 10:00:42 2015 -0500
+
+    Fix Saber's Invisible Air
+    
+    - Fix the pseudo-projectile, it should now launch properly towards the
+    target
+    - Fix the alpha, size and color of particle, it should now be easier to
+    see.
+
+commit 97012ae836369c1f3df7dd356b33adeddd519cb9
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Mar 7 08:48:19 2015 -0500
+
+    Fix Caster HG's particle and descend function
+    
+    - Add ground particle to HG with CP2.x = radius
+    - Fix Caster's z position when user uses HG from higher ground. Now it
+    should always snap to the ground.
+
+commit 4a37f7eff11b67d32f2857101d2d07dcc86f6f70
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 6 17:26:36 2015 -0800
+
+    Update March 6th
+    
+    - Fixed a bug where UBW would leave permanent sight on casted location
+    - Added shield durability particle to Caster's Argos
+
+commit 12ee020ad09e73d869aef7b94456a6954ad6e150
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Mar 6 19:23:19 2015 -0500
+
+    Fix Argos' durability for taking ability damage
+
+commit 77d80d3c3723365a2a71a984e8ca2ad454ecebc2
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Mar 6 18:52:09 2015 -0500
+
+    Disable Archer's Clair dust particle for now
+    
+    Will come back to fix this later
+
+commit 35e1536790333939118ec2d84aa2a4f217e57d82
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 6 15:47:44 2015 -0800
+
+    Merge
+
+commit f17a34e73e154919b836b7a16013ed95abb25154
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Mar 6 18:26:54 2015 -0500
+
+    Update Caster's Argos durability number
+
+commit 58d271da6905447f2a134591764c3cde12d75ae4
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Mar 6 12:36:12 2015 -0800
+
+    Updated Lancelot's skil template
+
+commit 659ee9b6f299878d0c23e1f85b3dd136e1b930a6
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Mar 5 09:42:03 2015 -0800
+
+    Updated lancelot's template
+
+commit 26d72d2d0cf36909ab8c97f84d49fd29ccdbd25c
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Mar 5 12:40:47 2015 -0500
+
+    Update Caster's hecatic graea particles
+
+commit d8f9062fde6347523fa1c42b3864010f1bed1b65
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Mar 5 05:56:04 2015 -0500
+
+    Update some values for face_splash
+
+commit f63903f6fa27db788766b265e232eb0da7b92b91
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Mar 3 22:27:10 2015 -0800
+
+    Update March 3rd
+    
+    - Adjusted base stats
+    - Added tooltip for Lancelot
+    - Added stack count for Archer's Overedge
+    - Fixed bug associated with ability acquisition level
+    - Fixed bug where Archer UBW can teleport enemy ward as well
+
+commit 0feae400901c1d6a46938f33cb85b463c2034a7a
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Mar 1 09:32:44 2015 -0800
+
+    Added StatCollection
+
+commit 3f356dc12d5220a251a0c4c12cd6d56cafd1c8ae
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 28 13:01:00 2015 -0800
+
+    First public release version
+
+commit a2adc5334f082b1f45135a825c9b11a5bfe6f183
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 28 00:08:10 2015 -0800
+
+    Bulk update before public release
+    
+    - Reconnect bug is fixed
+
+commit ea66ff282d4d5aa152275fcfc7fdb599df3c404a
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Feb 19 17:11:51 2015 -0800
+
+    EXP changes
+
+commit 61a16b89802dc06ae5ca39e274739a64dce926e6
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Feb 19 01:08:52 2015 -0800
+
+    Added a callback function for looping through players
+    
+    - Round bug should be fixed(requires 10 man setting to make sure)
+
+commit fae4005b0ea0ebac244f11b6b1dea8c1a1887f0c
+Merge: 40ccc96 491edbe
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 16 19:30:26 2015 -0800
+
+    Merge
+
+commit 40ccc96a5264a2bfb5000f9c530831239b4ebd4e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 15 12:58:03 2015 -0800
+
+    commit before sync
+
+commit 491edbeaeddd9c27d90ca46957fab074dbf2bb1e
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Feb 15 12:37:36 2015 -0500
+
+    Finish Gilgamesh's VFX, and fix multiple other particles
+    
+    - Updated Gilgamesh's Enkidu particle
+    - Updated Gilgamesh's Enuma Elish with particles during the charge
+    - Updated Gilgamesh's Max Enuma Elish with particles during the charge
+    - Updated Saber's Excalibur/Max Excalibur particles color to be a bit
+    darker
+    - Fix Archer's Clairvoyance, it should no longer have white flickering
+    texture
+
+commit 46c7cbf920b5be03bab1f337250a000f33a9c4b1
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Feb 13 17:59:38 2015 -0800
+
+    Added UBW timer, Fixed round freeze bug when 1on1
+    
+    Reconnect glitch still not fixed
+
+commit 9a2aeb45c86b38342ccd10ea30052125077b8907
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Feb 12 01:56:35 2015 -0800
+
+    Tons of bug fix
+    
+    - Added -50 to 50 hitbox for all heroes for easier targeting
+    - Fixed a bug where UBW does not let invulnerable units exit
+    - Fixed a bug where stat bonus can be attained up to lvl 10
+    - Fixed a bug where Archer(4th) could gain gold before game begins and
+    can stack the passive on every death.
+    - Fixed a bug where C scroll does not get disjointed
+    - Fixed a bug where dead person could still detect presence
+
+commit 540fd178cf7269db2752bf46e96d352d51b554a7
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Tue Feb 10 00:51:13 2015 -0800
+
+    Added round timer
+
+commit 373cf099d7482c7791fce8f599cc240b89ed9be3
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 9 01:57:41 2015 -0800
+
+    Added personal C scroll stock and stat gain limitation
+
+commit 29be10fafabc863a84bd93f1df1a761762669f94
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 9 00:51:52 2015 -0800
+
+    Enforced combo constraint
+
+commit e847afb18949f6de7f793c48d5b873e636107947
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 8 22:47:42 2015 -0800
+
+    Fixed bug with 2nd Seal, Adjusted blink particle
+
+commit a17459358156f0552add614f56111e2dc2a2881b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 8 21:22:18 2015 -0800
+
+    Added known issues file
+
+commit 9b7e10335f25559dbf0878ac13edb3c86044ddba
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 8 16:22:47 2015 -0800
+
+    Fixed bug with heart break and round finish
+    
+    - No longer breaks heart infinitely
+    - All  non-hero units(ward, territory) are killed at the end of round
+
+commit 587997a52e2429f7f998be67e946f8c9737fc0e7
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 8 12:29:01 2015 -0800
+
+    Reduced music volume, Added BGM on and off feature
+    
+    -bgmon / -bgmoff
+
+commit d71c9c547b730802723dee432934c632370ab9d7
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 18:56:49 2015 -0500
+
+    Adjust GOB's projectile start point
+    
+    Adjust it backward a bit so it doesn't start from thin air
+
+commit 8858e83b379b0b693f92157d4bc904acdeae01af
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 18:45:33 2015 -0500
+
+    Update VFX on Gilgamesh and 4 projectiles
+    
+    - Saber's Max/Normal Excalibur projectile now binds to dummy and will
+    travel along.
+    - Saber Alter's Excalibur, same as above
+    - Gilgamesh's Enuma Elish, same as above
+    - Increase transparency and size of Gilgamesh's Gate of Babilon.
+
+commit cf1a050fef13bb15fff7d7f8d4a6e13bf18f8df0
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 17:32:11 2015 -0500
+
+    Update Bloodfort to reduce lag.
+    
+    It should upgrade overall performance now
+
+commit e74573e29f160e7ed8bc4315ffe7bf98e1bb0f6e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 10:35:17 2015 -0800
+
+    Updated Berserker's suggested item list
+    
+    so much for a doom bringer
+
+commit a6b2f418216e15e4548308748c778a5493c8ab9b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 10:12:31 2015 -0800
+
+    Updated combo requirement
+
+commit 8047307c05f63b2653e91b7f8ea59d24fc8d52ad
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 09:48:44 2015 -0800
+
+    Updated 10 minute bonus and win condition
+
+commit 1b986922fb48ca684a4fe081337ebb7b5186d528
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 11:34:05 2015 -0500
+
+    Update unsaved change in GOB particles
+
+commit 7a3a0146e60adc3d2f0cb2ef1f53c810a718d63b
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 11:32:03 2015 -0500
+
+    Update Gilgamesh's GOB portal particle
+
+commit c0b5fab208faaeed1d94e0422c5ddc0a5428da39
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 08:27:05 2015 -0500
+
+    Update Gilgamesh's GOB projectile
+    
+    Move the projectile a bit forward so it will spawn in portal.
+
+commit c2a8eec6be20ca18a6ac2241788f1361e70a9970
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 03:45:57 2015 -0800
+
+    Updated gold command
+    
+    -goldpls : Pops a message to ask for gold from team
+    -(pID) (goldAmt) : Sends goldAmt gold to assigned hero of pID
+
+commit 365aa1b3bd86128191cf1bc480e831f8fb5c8ff5
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 02:43:38 2015 -0800
+
+    Updated Master initialization and death counter
+    
+    -testsetup : Fully replenishes master's mana and sets hero up for combo
+    by giving 20 all stats
+    -unpause : Removes pause status at the start of round
+
+commit 82051b7600eef4baf2df081b23faf9c72bb4647e
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 05:38:15 2015 -0500
+
+    Finished Gilgamesh's Sword Barrage
+
+commit 935d3033ad15b6e472ac5fdddf4aa8fbd2d1a113
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Feb 7 05:15:43 2015 -0500
+
+    Remove particles in case of multiple instances of spell
+
+commit 20afb881db10d0872cfdd5aaeffbce15d374975b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Feb 7 02:02:00 2015 -0800
+
+    Added effect, sound and fixed bugs for lot of abilities
+
+commit 540f03d1e136d531ee14ab5d9ce030c2ff642d17
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Feb 6 01:54:02 2015 -0800
+
+    Updated lot of things
+    
+    - Dynamic item cost
+    - Tooltip update
+    - Added bridge model
+    - Added sounds for many abilities
+    - Fixed bugs for Archer ability(namely Hrunting and UBW)
+    - Fixed UBW bugs
+
+commit c72e699160f9b4397f11497429bb0192c4d28c22
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Feb 5 21:11:52 2015 -0500
+
+    Make minor adjustment to the particles
+
+commit f80eb6cc238ab01d0fc6cbd3a3b332c5ccc1ee7b
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Feb 5 18:49:06 2015 -0500
+
+    Adjust cyclone angle
+    
+    This is done so it can be seen easier.
+
+commit dfe442690b3743911d091a3221f49fa6ca174371
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Feb 5 18:07:07 2015 -0500
+
+    Increase the particle count for outline
+
+commit ed835c72f796c4d824eee5a419e196baa23bf3dd
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Feb 5 18:03:21 2015 -0500
+
+    Update with unsaved changes on particles
+
+commit eff9c1dd5986e2a369ce3881209b3b8056fb3686
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Feb 5 17:59:48 2015 -0500
+
+    Updated Gilgamesh's Enuma Elish projectile
+
+commit 8275c690a012d631a065879ea1afa8e8af56a034
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Thu Feb 5 01:12:41 2015 -0800
+
+    Updated Lancer's Heart Break particle
+
+commit e1ce3730f0bb469869cdebc8bd5e43d2cbb4c5e7
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Feb 4 02:51:07 2015 -0800
+
+    Finished Caster
+
+commit 205857b7d5e85fe65b196dc3cbc784067abf5f3e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Wed Feb 4 01:12:03 2015 -0800
+
+    Finished Shard System
+    
+    screw static KV and item cost
+
+commit 0f53e41deca57c706a2dc3dc150f391954321ad1
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Feb 2 18:34:59 2015 -0500
+
+    Fix for Saber Alter's Derange particles
+
+commit 5fbb437e2a67be119fd7b4ab4fbfc960333ba9fb
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 2 14:55:17 2015 -0800
+
+    Added screen splash for Gilgamesh's combo
+
+commit 998060b61ba56b842df038a63796603f67c1f87b
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Feb 2 12:59:53 2015 -0800
+
+    Added cooldown to regular ability after using combo
+
+commit caa9dd0327878a799d7b0ee440ff426b6348c67f
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 2 08:37:05 2015 -0800
+
+    Slightly changed slam timer and moved particles into it
+    
+    This is so effect actually shows when the damage goes in
+
+commit 35639c242a27dc756dfe316ff8757633c10b06f0
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Feb 2 06:13:45 2015 -0500
+
+    Update life time of one sub particle system
+
+commit b9b81ea0d0fe42b113f5100d037e39c4c8d3fcc4
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Feb 2 06:11:14 2015 -0500
+
+    Update Rider's Bellerophon particles
+
+commit e290cf6a6b8e7d0153bd89109100337db64ac981
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Feb 2 02:52:31 2015 -0800
+
+    Added effects and sounds to items, Modified attributes
+    
+    Now correctly reduces Master 1's mana when acquired
+
+commit 920d9ea2d78dcf1b794631c2ee10d1167fcc3b8e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 1 21:36:32 2015 -0800
+
+    Updated Shard items and CS effects
+
+commit 87ffb3e762881cc43e6773b28318998866724ebf
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Feb 1 05:18:27 2015 -0500
+
+    Update to test performance on bloodfort
+
+commit 7cd2faf99492e53848e38db8e84c20519e0c21f0
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 1 02:14:50 2015 -0800
+
+    Updated tooltips for Shard system
+
+commit 2ab021aa187da78372e136a2716d9192144d547c
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Feb 1 05:09:12 2015 -0500
+
+    Disable some children
+
+commit 0411c4f0a9b1ff64fcaaafa71b18e3da75071b7a
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Feb 1 05:04:47 2015 -0500
+
+    Reduce particle counts in bloodfort
+
+commit 31ee944d0e12ccc03592a350c9938fae24ce06ba
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 1 01:37:00 2015 -0800
+
+    Uploaded spellicon images
+
+commit dfe5f4b82da6b6b4024be81d04e2ee15d46ab042
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Feb 1 01:20:11 2015 -0800
+
+    Added base structure for Shard system
+
+commit 7d78b3f56879608d25f69678b80077fa3f8bdd94
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 18:37:57 2015 -0500
+
+    Update Rider's Bellerophon 2
+
+commit 68be9ef2a22b2570d9bd7b3c9fb16ed27aea2aa0
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 17:13:59 2015 -0500
+
+    Update one of the sub particle color
+
+commit 8fa2a37eb37b54705c0c1626b13350e035a84a59
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 17:11:10 2015 -0500
+
+    Update Saber Alter's Excalibur with new particles
+
+commit a6ec9f617acde2c5e877c3dbec6cb69d4c28155f
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 15:24:31 2015 -0500
+
+    Update Saber's Excalibur with new particles
+
+commit 8f9997fed29b297d97ec2bd36081772ba26740e2
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 31 09:28:05 2015 -0800
+
+    Removed mystic eye debuff effect
+
+commit 330a52848e0f53b5f809fff5d84d48f45db2b978
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 08:15:11 2015 -0500
+
+    Adjust nail swing particles' alpha and offset
+
+commit 93efea81ee7946fc13a58e84aceb367f69371f79
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 08:12:31 2015 -0500
+
+    Update Rider's Nail Swing and some alpha value
+
+commit f005a6557c908746fc3637afe1e214dffc0fbd67
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 07:24:11 2015 -0500
+
+    Update Rider's Bloodfort Andromeda
+
+commit 3768925e446d910bddee67b14eb9a69e269b1530
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 05:46:00 2015 -0500
+
+    Model update and Rider's particles update
+    
+    - Add attachment point to asn.vmdl model
+    - Add attachment point to rider.vmdl model
+    - Add particles for mystic eye and breaker gorgon
+    - Delete modifier_petrified in breaker_gorgon since it seems to involve
+    particle only and is not used any more.
+
+commit 93588dec6c99bc94d17e881c50e69d6ffa12777e
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 31 05:20:26 2015 -0500
+
+    Update Gate Keeper's Particles
+
+commit 64d2c0ecab2fc46dc7be53091606ee1364b4e5a9
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 31 00:10:14 2015 -0800
+
+    Added movement control to Bellerophon
+
+commit 1f8882eecc51627152408f972a53993ad1c1031e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Fri Jan 30 23:39:01 2015 -0800
+
+    Updated general tip
+
+commit 8f30cfa28909f492eeecd1df763045c99e115610
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Jan 30 05:47:17 2015 -0500
+
+    Update FA Quick Draw
+
+commit ab368182a27f54e4580ffbef48f7502f785fde17
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Jan 30 05:09:17 2015 -0500
+
+    Remove debug variable
+
+commit 94d43ff5706adead0ce0bb38104a0b09bd8d81bc
+Author: kritth <rkasidis@gmail.com>
+Date:   Fri Jan 30 05:07:49 2015 -0500
+
+    Update FA Tsubame Gaeshi
+
+commit be1ac8ea3b3a67155cdd4319c2cd7ffdb1403c7a
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Jan 29 18:16:27 2015 -0500
+
+    Updated FA 2 abilities
+    
+    - Gate Keeper
+    - Heart of Harmony
+    Note: I kept it simple to allow more time to work on other particles. If
+    this is required to change later, let me know, I will fix them after
+    this weekend.
+
+commit d9cfda45f642ce2b53dcac295af3a29e53ddf0d8
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Jan 29 06:26:47 2015 -0500
+
+    Update FA's Illusory Wanderer with small fixes
+    
+    - Particles should all show up and attach properly on illusions.
+    - Add new variables to reflect maximum number of illusions spawned.
+    - Make illusions spawn around the caster instead of cramping them in one
+    spot which used to cause initial movement becomes stuck.
+
+commit 5741b704d621fa28adeddb7fcdf8181e364ba360
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Jan 29 03:59:11 2015 -0500
+
+    Fix unexpected error in Vortigern
+
+commit 79047d4af8ead151cd79642212f98f9659369dd7
+Author: kritth <rkasidis@gmail.com>
+Date:   Wed Jan 28 19:41:31 2015 -0500
+
+    Fix the bug for corrupt models in the actual client
+
+commit 34bc549645ab8c901a3acbfa637a5b8155b0bed8
+Author: hsyoo <hsyoo@sfu.ca>
+Date:   Mon Jan 26 18:08:40 2015 -0800
+
+    Updated tooltips for Caster territory
+
+commit cc89f966dd9f8bc1149b1592605080e2435d7c0e
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 26 17:19:42 2015 -0500
+
+    Updated textured splash screen to show up immediately
+
+commit 6a6aed97fe9cd005c721a9d342286476a3f481a8
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Mon Jan 26 08:45:35 2015 -0800
+
+    Fixed Caster's far sight
+
+commit 7c3bc34bf4ca4ad208b7b7587d551d6148d3a193
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 26 05:54:04 2015 -0500
+
+    Optimized texture splash screen
+
+commit 40b2007c81adc3020046c1d9bda585837e69b546
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 17:27:28 2015 -0800
+
+    Updated GARRRR splash screen and berserker combo
+
+commit 758cfe9e39deea9d96af08d6fe7ea91d5cae9fd7
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 16:55:42 2015 -0800
+
+    Updated combo splash screen
+
+commit 2a147740547dfb2cc3524f4cf0a122e1c0e93919
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 15:09:04 2015 -0800
+
+    Made splash a bit more bright
+
+commit 7e0ea5d4c819e350c94b528f9e0fade925398550
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 15:06:40 2015 -0800
+
+    Made splash a bit more bright
+
+commit 73ef37d2f6ae591ab0bab06ba1995c17a25a72b4
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 18:02:14 2015 -0500
+
+    Upload brown splash screen
+
+commit bbc36650cd835cc7ed1f9f5890af415a32e0ac3e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 14:56:13 2015 -0800
+
+    commit before sync
+
+commit 290dcc2b3d3df1c6d4eecdff9e98a2174fcca5f2
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 17:54:35 2015 -0500
+
+    Updated Archer's hrunting
+
+commit fcb1e3fb142ab169333c0795c1fba26caeef1591
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 16:05:44 2015 -0500
+
+    Updated Archer's Arrow Rain and minor fix
+    
+    On sword_barrage:
+    - Merge two timers into one
+
+commit 1a03989ae720d5764409c77b6ad7f790c5b9b216
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 15:18:19 2015 -0500
+
+    Improve Sword Barrage's particle
+    
+    It now rotates to the correct direction on its own without using lua.
+
+commit 9c3864f1f136ef3548c2d0277c6bd460dff989ff
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 15:07:15 2015 -0500
+
+    Add particle clean up to overedge
+
+commit cc9cd73af685302349dc8b222a18e1db93a95f57
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 15:05:56 2015 -0500
+
+    Updated Archer's Overedge
+
+commit 70805e7a9293e1ff20ac759d9d2cc0ccd0944ed7
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 08:36:24 2015 -0800
+
+    Modified Archer combo's ascension and descension speed
+
+commit 36edd7f19977829b6043b87cf4d9a356e457a77e
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 11:01:04 2015 -0500
+
+    Updated Archer's Rhoaias' particles
+
+commit d633a073848ffe6f8d4ca9d8c0964c23d5935964
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 25 06:12:12 2015 -0500
+
+    Updated Archer's nine lives VFX
+    
+    - Comment out some debug texts
+
+commit 209b7f4d4fbea28012ea96e62a86781cbc04930e
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sun Jan 25 01:18:01 2015 -0800
+
+    Revisited Caster's Territory
+    
+    not done yet
+
+commit 25ee8a0eceb29e2fd54592550983162739e7cb96
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 17:55:33 2015 -0800
+
+    Enforced target location constraint for jumps/blinks
+
+commit 9ae7a284f4b4e3055b1d65faa88f80ab26595d2c
+Merge: 5cf684d a5603ff
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 14:33:53 2015 -0800
+
+    Merge
+
+commit 5cf684d5b196940e0f23569204c9259ab2d45531
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 14:27:04 2015 -0800
+
+    Fixed issue with Clairvoyance particle
+
+commit a5603ff479773177b27b25c4d4a3f9bec43de09f
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 17:18:54 2015 -0500
+
+    Fix Clairvoyance
+    
+    Only allies with hero in control are able to see the particles.
+
+commit 8a4f7f9d595d4c33c56a2bc98f0055784ff27ebc
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 17:07:48 2015 -0500
+
+    Reduce impact radius in Sword Barrage
+
+commit e6206356cfd71a6b089b5eac49f5b8bed408554a
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 17:02:24 2015 -0500
+
+    Upload the correct particle files
+
+commit e96fcb8478c83a32eeb7cd99cb5b97ec3a4e82d9
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 14:01:13 2015 -0800
+
+    Added tooltips for UBW abilities
+
+commit e39c9ac44d39416da04edbd47cba548699d87f13
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 17:00:32 2015 -0500
+
+    Updated Archer's Sword Barrage
+
+commit 9235e016e0b794045d60718aa576ba04620adddf
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 11:36:07 2015 -0800
+
+    Added UBW flame spread
+
+commit f4ac73ae6649782baa9b247899560d1aa5f7241c
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 10:13:07 2015 -0500
+
+    Updated Archer's UBW and the particles
+
+commit 3c8bf9687c420427ca141a07e312eb3cebe0fb33
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 24 09:10:53 2015 -0500
+
+    Updated Archer's Clairvoyance and small fix
+    
+    - Fix for a bug where multiple instances of the spell is casted but
+    older dummies will not get destroyed.
+    - Finished VFX
+
+commit 27c22a60b7dfb219f7fe9e2e0d6c01bf05c8ed2b
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 03:30:40 2015 -0800
+
+    Small tooltip fix
+
+commit bee2ddba45f0b7fdcaf10f969699b02f14bae084
+Author: dun1007 <hsyoo@sfu.ca>
+Date:   Sat Jan 24 03:17:44 2015 -0800
+
+    Finished TA
+
+commit 9b84cfb8e28e07e29d9e211998dcc42544c5ab96
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 22 22:58:23 2015 -0800
+
+    Finished TA attribute abilities
+
+commit c74ce655ff22c5f99ffe6f1a7104241abe7c650e
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 22 15:40:00 2015 -0800
+
+    Finished FA
+
+commit b248455dbbb9a7810f9ef68218f2c52626c67fbb
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 22 09:24:32 2015 -0800
+
+    Implemented FA combo and TA Ambush
+    
+    I gave up on RemoveWearables
+
+commit 7bc492237263e8dfdb5afb11ba2f3145b31a5cdd
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Wed Jan 21 00:30:47 2015 -0800
+
+    Added cosmetic removal function, fixed camera distance
+    
+    I was an idiot and had two camera overrides. FML
+
+commit 635607cb38f4ed100e88ce56ee1424858efec0d3
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Tue Jan 20 21:23:33 2015 -0800
+
+    Removed ground particle from script
+
+commit eeb53335c799c4b2ad46f18fb77c4eaddf511865
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 19:49:37 2015 -0500
+
+    Remove ground particle for vortigern
+
+commit 7631bcfa913eeba35629d34891fb01da9dc78d4d
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Tue Jan 20 16:27:18 2015 -0800
+
+    Tooltip fix, Increased camera distance
+
+commit 365d8a6b92c1fa8304184239fd05d2c8f274354c
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 19:20:28 2015 -0500
+
+    Updated Saber Alter's Vortigern particles
+
+commit eb91e1fe5b44f2ec4e4e55345329cf7f6c52d2e2
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Tue Jan 20 09:47:37 2015 -0800
+
+    Fixes to Vortigern
+    
+    Added DeleteOnHit KV to Vortigern so projectile doesn't disppear after
+    hitting one enemy
+    Added varying damage factor
+    Added stun upon landing
+    Slightly changed start and end radius
+
+commit 5daef32d9420b86df357ea9f047519dd8fdb24d6
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 07:45:19 2015 -0500
+
+    Revert the previous revert
+    
+    Correct the incorrect commit due to conflict before sync
+
+commit 5d54575d8d951f763e758656701922f74b2cf6b5
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 07:43:26 2015 -0500
+
+    Revert "Updated Saber Alter to show Mana Catalyst's counter"
+    
+    This reverts commit 9e5daf4e08a8c0581570d8ff5ccbdb8469f164d6.
+    
+    Conflicts:
+    	scripts/vscripts/saber_alter_ability.lua
+
+commit 4a7bf883297744ec5d8439ec62a22649bff68e77
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 07:41:57 2015 -0500
+
+    Remove debug variable
+
+commit 9e5daf4e08a8c0581570d8ff5ccbdb8469f164d6
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 07:40:36 2015 -0500
+
+    Updated Saber Alter to show Mana Catalyst's counter
+    
+    This update is for the user to be able to see the exact stack of Mana
+    Catalyst he/she has before actually spending it. It is shown via
+    Derange's passive icon.
+
+commit 394ad41966773b28c9bfdabe350175f805de7a7f
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 04:30:22 2015 -0500
+
+    Fixes on Vortigern
+    
+    By rotating the point and find new forward vector, it seems to work out
+    well. However as noted, if you want to use more than 9 projectiles, you
+    have to use other units such as thinker or dummy to store the projectile
+    instead, but shouldn't be much more work if it's really necessary.
+
+commit ca0331a2cb2e5049566380a06e418cabb8dc8479
+Author: kritth <rkasidis@gmail.com>
+Date:   Tue Jan 20 03:07:58 2015 -0500
+
+    Updated Saber Alter's Mana Catalyst and minor fix
+    
+    - New particles for mana catalyst
+    - Minor fix for ManaBlastCount where user can have more than the maximum
+    amount allowed
+
+commit e03b461756b045ccc69571205a2f55a727ed7ae8
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 19 23:22:24 2015 -0800
+
+    Fixed critical bug associated with KV and timer
+
+commit c4d0d1bfece7a44b894c494cf1e46df60395fa55
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 19 19:55:02 2015 -0800
+
+    Put cap to Mana Blast attribute, updated shop item list
+
+commit 76b72bf4a735c52bc0aae2566cea50387fce3f48
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 19 21:33:23 2015 -0500
+
+    Updated Saber Alter's Excalibur and minor fix
+    
+    Delete unnecessary children in saber_excalibur to reduce unnecessary
+    particle counts due to the excalibur size is much bigger than those
+    small particles making them unseeable.
+
+commit b746cd1b78d525f88fc9b755d9d8528ec3ee254e
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 19 16:26:22 2015 -0800
+
+    Added screen overlay to DS combo, added item sprits
+    
+    Items still being worked on
+
+commit 0c3b2a3189e62ba2a9d75088bdc6c390f9cbe5d4
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 19 19:20:57 2015 -0500
+
+    Added blue splash particle
+
+commit 00c210cecaa8fbfa44233a9c24b0275dcfeed47e
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 19 19:14:48 2015 -0500
+
+    Updated Saber Alter's Max Mana Burst
+
+commit 31133ce80c5718e28cdeec6d34e267d01009ba87
+Author: hermit1007 <hermit1007@naver.com>
+Date:   Mon Jan 19 11:12:26 2015 -0800
+
+    Added items for master functioning as item transfer
+    
+    Might be incomplete, need further testing when I am back at home
+
+commit 37fa5e5860e8c93f41c977d2eb8fc9a13fdef595
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 19 00:15:45 2015 -0800
+
+    Edited scroll icons, Added player storage unit, etc
+    
+    Added SKIP brushes around bottom black region, made some fixes to items
+
+commit 35d867370980d2bddba5bf4707efbeefc24da5f4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 17 23:03:06 2015 -0800
+
+    Allowed master to pick up item
+    
+    Couldn't fix spirit link gg
+
+commit b06bf7054bff83940c3e24fd3ff31902cbd7e1d4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 17 03:13:17 2015 -0800
+
+    Added range buffer for single target abilities, finished most items
+    
+    Spirit Link is still buggy when linked ally reaches 1 health, removing
+    that hero from link table results in error in DoDamage function in util
+    (target nil)
+
+commit 7b4ae9f1d3d58fab65fccd3bc4d5356b35e60ef6
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Fri Jan 16 16:36:56 2015 -0800
+
+    Added suggested items, Fixed some tooltips
+
+commit 877dad075c70ad85f35ff7e6029dfa3d05403d88
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Fri Jan 16 01:41:58 2015 -0800
+
+    Finished presence detection, enforced seal constraint
+    
+    Also added customerror UI(refer to master_ability.lua for its uses)
+
+commit 15a7e880f391065da0f9f11c654fb6958136a89a
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 15 20:15:55 2015 -0800
+
+    Updated presence detection
+    
+    Requires custom error UI to pop up an warning(SendCustomMessage does not
+    print warning only to yourself)
+
+commit 7cf91176882e6493c9a06b8be99d01280819e94a
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 15 16:29:30 2015 -0800
+
+    commited without putting end
+
+commit 3360acc167e32b884987ed150702528fa451bb3a
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 15 16:25:09 2015 -0800
+
+    Minor commit before sync
+
+commit 8fa58e4a0ab169f92e374c9deb994b18238d891c
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Jan 15 19:20:03 2015 -0500
+
+    Update Saber Alter's Mana Burst flag
+    
+    Make modifier invisible
+
+commit f5854a1233897ffae3cefaac54a29d582cc2731a
+Author: kritth <rkasidis@gmail.com>
+Date:   Thu Jan 15 19:18:22 2015 -0500
+
+    Updated Saber Alter's Mana Burst
+
+commit 61bb86dae87552abf56ea235ec320aaa823da071
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Thu Jan 15 01:35:51 2015 -0800
+
+    Implemented base for presence detection system
+    
+    EmitSoundOnClient does not work for some reason
+
+commit a6fdd600be1121986b8a0b67ed2548ceb78a2471
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Wed Jan 14 23:52:32 2015 -0800
+
+    Added scaleform to latch player_say event
+
+commit 44353095f66a99b02c5b0affeaf0e2d7a2bb24f4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Wed Jan 14 14:31:54 2015 -0800
+
+    Added infinite cooldown and mana cost to attributes
+
+commit 7366e6dac8635c3f419a67ccaa54c79e9b174b6b
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Wed Jan 14 13:30:29 2015 -0800
+
+    minor commit before sync
+
+commit 8447ca547244768aa3afe580584b0860ffdffa31
+Author: kritth <rkasidis@gmail.com>
+Date:   Wed Jan 14 11:53:23 2015 -0500
+
+    Updated Saber Alter's Unleashed Ferocity
+
+commit b810381b80bcdb8e6dae5eee0f0aaf2673b52b17
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Wed Jan 14 02:43:50 2015 -0800
+
+    Finished attribute and stat system
+    
+    Does not cost master's mana or health for test purpose at the moment
+
+commit 2b8c00f41956ee1e3f7cf1e6b913d2e069762ced
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Tue Jan 13 14:58:23 2015 -0800
+
+    Fixed a bug associated with -createhero
+    
+    Fixed a bug where -createhero would put a real player into index 2
+    times, causing it to gain double xp and gold at the start of round.
+
+commit 737041d6c1c090b66a18b69c4a5eddbd3547f153
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 12 23:50:13 2015 -0800
+
+    Finished tooltips for 4 heroes and Enabled attributes
+    
+    Archer, Lancer, Saber, and Saber Alter tooltips are in, and attributes
+    can be gained from master unit that spawns at (0,0,0). Costs no mana to
+    purchase for test purpose for now
+
+commit d43a88c68637cb85638a91327f9abb94d4b13774
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 12 17:40:31 2015 -0800
+
+    Added decrement to mana blast loop
+
+commit 7dce654405fc5b4ccac4ca63ff2a8fecf2264633
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 12 17:26:22 2015 -0800
+
+    Fixed error associated with local variable access
+
+commit c36595732d5d76e668b3676bc83b0352cd2d9111
+Author: hermit1007 <hermit1007@naver.com>
+Date:   Mon Jan 12 15:20:49 2015 -0800
+
+    Revert "Revert "Tooltip fixes, still setting up master unit""
+    
+    This reverts commit 3aa50341425dfd277327ad0656adcc4d7a0772a0.
+
+commit 3aa50341425dfd277327ad0656adcc4d7a0772a0
+Author: hermit1007 <hermit1007@naver.com>
+Date:   Mon Jan 12 15:19:47 2015 -0800
+
+    Revert "Tooltip fixes, still setting up master unit"
+    
+    This reverts commit 5b63a3e94b2ed553fae7271a8e2a75e6f980a6f9.
+
+commit 5b63a3e94b2ed553fae7271a8e2a75e6f980a6f9
+Author: hermit1007 <hermit1007@naver.com>
+Date:   Mon Jan 12 15:18:45 2015 -0800
+
+    Tooltip fixes, still setting up master unit
+
+commit 4bfcbb6b1dc7c5f1c67469b1fe97c924041242f8
+Author: kritth <rkasidis@gmail.com>
+Date:   Mon Jan 12 07:41:16 2015 -0500
+
+    Updated Saber's Strike Air and minor fixes
+    
+    - Include all particles necessary for strike air
+    - Move splash particles to correct folder
+    - Change some styling in npc_abilities_custom.txt to keep consistency
+    - Change variable name max to max_excal to avoid reserve word
+
+commit d5db4ace00984bf940032be8fc9dee246a5b831d
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Mon Jan 12 02:03:40 2015 -0800
+
+    Implemented Caster's Territory and Item Creation
+
+commit 8f63b2a88247705d9fe1f943d48f1b8d96f4788b
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 16:41:05 2015 -0800
+
+    Fixed OnProjectileHitUnit block for Max Excalibur
+
+commit a8902935511787ade935329a61f8bc3d34ac52bb
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 19:29:03 2015 -0500
+
+    Updated Max Excalibur's VFX
+
+commit eb726409961aeec3f8b874f772f8cffa240693b8
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 16:22:23 2015 -0800
+
+    Removed duplicates
+
+commit 9d817e9fc039ca47f72bdcd2ddb7a904916e90f4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 14:42:49 2015 -0800
+
+    Applied yellow screen overlay to Max Excalibur
+
+commit 42b68b88fac57781a74734784caf88318cdbac54
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 17:36:09 2015 -0500
+
+    Upload particle files for Avalon dash
+
+commit 23df4b890c760d339b15495949d5426e7a86a7af
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 17:30:59 2015 -0500
+
+    Upload Screen Splash
+
+commit f926ce11bfaaceb218a8acd176a9b6be8b6bd1cf
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 16:34:48 2015 -0500
+
+    Updated Avalon dash's Explosion VFX
+
+commit d18402c530f5e857bc44fc1d096c1e9553f931a6
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 13:12:26 2015 -0800
+
+    Added custom XP requirement, bounty gold and XP
+
+commit 2ba1624bf8856356dbee9f71fe395188be2c00b7
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 12:36:10 2015 -0500
+
+    Updated Avalon's Shield VFX
+
+commit ae4db870fe99802a585d242f4a12217357056ce2
+Merge: 904e29c b1838c6
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 09:27:26 2015 -0800
+
+    merge4test
+
+commit 904e29c018af488aaf76b1d94990c7b43a8d4ea4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 09:12:13 2015 -0800
+
+    Fixed reliable gold bug associated with Golden Rule
+
+commit b1838c64b2126844fd5543563190486a0f6995ed
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 07:57:53 2015 -0500
+
+    Updated Avalon's Shield VFX
+
+commit be6f28c0040cd084c61c9be37f3cdea71fd7254f
+Author: kritth <rkasidis@gmail.com>
+Date:   Sun Jan 11 05:39:12 2015 -0500
+
+    Update custom particle
+    
+    Reduce emission rate, change offset and increase emission radius
+
+commit 57f5385526869d25e4341c08f872a62777361950
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sun Jan 11 00:28:23 2015 -0800
+
+    More attributes and bugfixes to some abilities
+
+commit 893e9922234339e1510627b1c838d9714157d6d9
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 10 20:05:41 2015 -0800
+
+    attribute implementations halfway through
+
+commit e2a8d3cc4fa1ce2348e242e0318fefd65f9bece7
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 10 22:50:32 2015 -0500
+
+    Update Excalibur VFX
+    
+    Content includes
+    - Excalibur VFX in KV and swap projectile particle in script
+    - Custom particles for excalibur
+
+commit 53a97dc156c717933ba59ed0f97a074c87d30325
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 10 17:33:09 2015 -0500
+
+    Updated Caliburn's slow VFX
+
+commit 86cc8a030b1310fffdf662f40d46eccd28a436c4
+Author: kritth <rkasidis@gmail.com>
+Date:   Sat Jan 10 17:20:51 2015 -0500
+
+    Update Caliburn's VFX
+
+commit 1bab18a80366a7fdf85a3fdf411200b5e62878c4
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 10 14:09:21 2015 -0800
+
+    i was missing AbilitySpecial
+
+commit a66a46c02963e581530215ad9201b441d77469d2
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 10 13:50:44 2015 -0800
+
+    invisible air particles
+
+commit c85c0aff16c7b26fdc88e25d9d111e85b77aadc7
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Sat Jan 10 13:42:02 2015 -0800
+
+    first commit
+    
+    first commit
+    
+    123
+    
+    Revert "asd"
+    
+    This reverts commit
+    79dcd48bd6b917049fa850be1be217809fbc4636.
+    
+    asd
+    
+    first commit
+    
+    scripts
+    
+    Scripts
+
+commit e6bae4c60a8344ac2dfe5c5722aefd7f00f8d2f3
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Fri Sep 19 12:12:32 2014 -0700
+
+    Revert ":circus_tent: Added .gitattributes"
+    
+    This reverts commit 8498d4e0691be12f07788e38a89d80df115be42c.
+
+commit 8498d4e0691be12f07788e38a89d80df115be42c
+Author: dun1007 <hermit1007@gmail.com>
+Date:   Fri Sep 19 12:09:44 2014 -0700
+
+    :circus_tent: Added .gitattributes
