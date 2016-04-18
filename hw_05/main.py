@@ -26,15 +26,7 @@ def remove_bad_tokens(tokens):
 
     return relevant_tokens
 
-def add_term_frequencies(tokens):
-    return {token: tokens.count(token) for token in tokens}
-
-def make_tf_dictionary(collection_file):
-    """
-    Given a File object, creates a dictionary of the form
-    {'abstract/query_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
-    where all stop words, punctuation, and numbers are removed.
-    """
+def parse(collection_file):
     collection = {}
     concat_flag = False
 
@@ -53,6 +45,20 @@ def make_tf_dictionary(collection_file):
                 prev_line = collection.get(doc_id) or ''
                 doc_text = prev_line + line
                 collection.update({doc_id: doc_text})
+
+    return collection
+
+def add_term_frequencies(tokens):
+    return {token: tokens.count(token) for token in tokens}
+
+def make_tf_dictionary(collection_file):
+    """
+    Given a File object, creates a dictionary of the form
+    {'abstract/query_id': ['token_1': token_1_freq, 'token_2': token_2_freq,... 'token_n': token_n_freq}
+    where all stop words, punctuation, and numbers are removed.
+    """
+    # initialize dict with values as raw strings
+    collection = parse(collection_file)
 
     # tokenize the dict values and add per-doc token frequency
     for doc_id in collection:
